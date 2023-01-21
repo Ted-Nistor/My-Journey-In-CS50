@@ -2,7 +2,8 @@
 
 int main(void){
     printf("hello,world! \n");
-    string s =getc
+    string s =get ("input: ");
+    printf("output: %s\n",s);
 }
 
 
