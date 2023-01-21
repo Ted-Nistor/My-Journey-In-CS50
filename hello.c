@@ -7,8 +7,10 @@ int main(void){
     string first = get_string("What's your first name? ");
     string last = get_string("What's your last name? ");
     printf("hello, %s %s\n",first,last);
-    gets(name);
-    printf("hello, %s!\n",name);
+    char str[MAX_LIMIT];
+    fgets(str, MAX_LIMIT, stdin);
+    printf("%s", str);
+
 }
 
 
