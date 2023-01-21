@@ -7,7 +7,7 @@ int main(void){
     string first = get_string("What's your first name? ");
     string last = get_string("What's your last name? ");
     printf("hello, %s %s\n",first,last);
-    char name = fgetc("What's your nickname? ");
+    string name = fgetc("What's your nickname? \n");
     printf("hello, %s!\n",name);
 }
 
