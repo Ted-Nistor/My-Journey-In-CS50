@@ -4,8 +4,9 @@
 
 int main(void){
     printf("hello,world! \n");
-    string answer = get_string("What's your name? ");
-    printf("hello, %s\n",answer);
+    string first = get_string("What's your first name? ");
+    string last = get_string("What's your last name? ");
+    printf("hello, %s %s\n",first,last);
 }
 
 
