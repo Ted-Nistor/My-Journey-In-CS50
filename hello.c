@@ -9,7 +9,7 @@ int main(void){
     printf("hello, %s %s\n",first,last);
     char str[20];
     fgets(str,20,stdin);
-    printf("%s", str);
+    printf("hello, %s!\n",str);
 
 }
 
