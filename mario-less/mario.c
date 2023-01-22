@@ -8,7 +8,14 @@ int main(void)
     {
         for (int j = 0 ; j < height ; j++)
         {
-            if(j != height)
+            if(height - j != 1)
+            {
+                printf(" ");
+            }
+            else
+            {
+                printf("#");
+            }
 
         }
         printf("\n");
