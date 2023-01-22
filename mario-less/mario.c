@@ -3,20 +3,14 @@
 
 int main(void)
 {
-    int height = 8;
-    for (int i = 0 ; i < height ; i ++)
+    int height = 2;
+    for (int i=0;i<height;i++)
     {
-        for (int j = 0 ; j < height ; j++)
+        for(int j=0;j<height;j++)
         {
-            if (j < height-i)
-            {
-                printf(".");
-            }
-            else
-            {
-                printf("#");
-            }
+        printf("#");
         }
+    printf("\n");
     }
     printf("\n");
 }
