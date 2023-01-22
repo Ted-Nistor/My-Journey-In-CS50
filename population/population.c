@@ -7,7 +7,7 @@ int main(void)
     int start;
     do
     {
-        int startingPopulation= get_int("Type starting population: ");
+       start= get_int("Type starting population: ");
     }
     while(start<9);
     // TODO: Prompt for end size
