@@ -9,7 +9,7 @@ int main(void)
     {
        start= get_int("Type starting population: ");
     }
-    while(start<9);
+    while(start<=9);
     // TODO: Prompt for end size
 
     // TODO: Calculate number of years until we reach threshold
