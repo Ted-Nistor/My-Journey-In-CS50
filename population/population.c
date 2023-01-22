@@ -8,24 +8,24 @@ int main(void)
     int years;
     do
     {
-       start= get_int("Type starting population: ");
+        start = get_int("Type starting population: ");
     }
-    while(start<9);
+    while (start < 9);
     // TODO: Prompt for end size
     int end;
     do
     {
-        end= get_int("Type ending population: ");
+        end = get_int("Type ending population: ");
     }
-    while(end<start);
+    while (end < start);
     // TODO: Calculate number of years until we reach threshold
-    for(int i=1;start<end;i++)
+    for(int i = 1; start <end; i++)
     {
-        start+= (start/3 - start/4);
-        years=i;
+        start += (start/3 - start/4);
+        years= i;
 
     }
 
     // TODO: Print number of years
-    printf("Years: %i\n",years);
+    printf("Years: %i\n", years);
 }
