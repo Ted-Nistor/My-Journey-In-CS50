@@ -10,7 +10,7 @@ int main(void)
         {
             if(height - j != 1)
             {
-                printf(" ");
+                printf(".");
             }
             else
             {
