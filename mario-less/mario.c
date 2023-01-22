@@ -6,14 +6,16 @@ int main(void)
     int height = 8;
     for (int i = 0 ; i < height ; i ++)
     {
-        if (i <height-1)
+        for (int j = 0 ; j < height ; j++)
         {
-            printf(".");
-        }
-        else
-        {
-
-        printf("#");
+            if (j < height-i)
+            {
+                printf(".");
+            }
+            else
+            {
+                printf("#");
+            }
         }
     }
     printf("\n");
