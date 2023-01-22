@@ -44,18 +44,3 @@ bool prime(int number)
     }
     return true;
 }
-
-
-// if(number < 2)
-// {
-// return false;
-// }
-// int j;
-// for (j = 2; j <= number - 1; j++)
-// {
-// if(number % j == 0)
-// {
-// return false;
-// }
-// }
-// return true;
