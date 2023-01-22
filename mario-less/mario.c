@@ -3,21 +3,18 @@
 
 int main(void)
 {
-    int height = get_int("Height: ");
-    for (int i = height ; i > 0 ; i --)
+    int height = 4;
+    for (int i = 0 ; i < height ; i ++)
     {
-        for (int j = 0 ; j < height ; j++)
+        if (i <height-1)
         {
-            if(height - j != 1)
-            {
-                printf(".");
-            }
-            else
-            {
-                printf("#");
-            }
-
+            printf(".");
         }
-        printf("\n");
+        else
+        {
+
+        printf("#");
+        }
     }
+    printf("\n");
 }
