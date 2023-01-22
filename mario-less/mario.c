@@ -4,13 +4,13 @@
 int main(void)
 {
     int height = get_int("Height: ");
-    char space = ' ';
-    char bricks='#';
     for (int i = 0 ; i < height ; i ++)
     {
-        for (int j = 0 ; j <height ; j++)
+        for (int j = 1 ; j <height ; j++)
         {
-            
+            char space = '';
+            char brick = '#';
+            printf("#");
         }
         printf("\n");
     }
