@@ -7,7 +7,7 @@ int main(void)
     int n=get_size();
 
 // Print grid of bricks
-    void 
+    void print_grid(n);
 
 }
 
