@@ -5,6 +5,7 @@ int main(void)
 {
     // TODO: Prompt for start size
     int start;
+    int years;
     do
     {
        start= get_int("Type starting population: ");
@@ -18,7 +19,13 @@ int main(void)
     }
     while(end<start);
     // TODO: Calculate number of years until we reach threshold
-    int years;
-    
+    for(int i=1;start<end;i++)
+    {
+        start+= (start/3 - start/4);
+        years=i;
+
+    }
+
     // TODO: Print number of years
+    printf("The number of years is %i\n",years);
 }
