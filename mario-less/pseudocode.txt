@@ -1,0 +1,5 @@
+1. input height
+2. make a for loop with (int i =0 ; i<height ; i++) for the rows
+3. make another for with (int j =0; j<height;j++) for the columns
+4. inside the second for loop, make a variable for spaces and a variable for #
+5. print print height-j spaces + j #
