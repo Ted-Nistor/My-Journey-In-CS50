@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int height = 4;
+    int height = 8;
     for (int i = 0 ; i < height ; i ++)
     {
         if (i <height-1)
