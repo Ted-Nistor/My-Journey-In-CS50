@@ -6,7 +6,7 @@ int main(void)
     int height = 4;
     for (int i=0;i<height;i++)
     {
-        for(int j=0;j<height;j++)
+        for(int j=0;j<height - i;j++)
         {
         printf("#");
         }
