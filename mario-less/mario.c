@@ -4,7 +4,7 @@
 int main(void)
 {
     int height = get_int("Height: ");
-    for (int i = 0 ; i < height ; i ++)
+    for (int i = height ; i > 0 ; i --)
     {
         for (int j = 0 ; j < height ; j++)
         {
