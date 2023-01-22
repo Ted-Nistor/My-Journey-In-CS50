@@ -6,11 +6,9 @@ int main(void)
     int height = get_int("Height: ");
     for (int i = 0 ; i < height ; i ++)
     {
-        for (int j = 0 ; j <=height ; j++)
+        for (int j = 0 ; j < height ; j++)
         {
-
-
-            printf("# ");
+            if(j != height)
 
         }
         printf("\n");
