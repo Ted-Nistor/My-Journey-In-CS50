@@ -9,5 +9,8 @@ int main(void)
     //     printf("meow\n");
     //     counter--;
     // }
-
+    for (int i=0;i<3;i++)
+    {
+        printf("meow\n");
+    }
 }
