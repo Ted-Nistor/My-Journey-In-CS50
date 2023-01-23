@@ -35,3 +35,8 @@ int length(long x)
     return counter;
 }
 
+
+void deconstruct(long x,int length)
+{
+
+}
