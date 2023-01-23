@@ -36,7 +36,3 @@ int length(long x)
 }
 
 
-void deconstruct(long x,int length)
-{
-
-}
