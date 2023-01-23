@@ -41,10 +41,18 @@ void check_sum(long x)
 {
     int num = 0;
     printf("Num: ");
-    while (x > 0)
+    // while (x > 0)
+    // {
+    //     num = x%10;
+    //     printf("%i", num);
+    //     num = 0;
+    //     x/=10;
+    // }
+
+    for (int i = x ; i > 0 ; i/=10)
     {
         num = x%10;
-        printf("%i ", num);
+        printf("%i", num);
         num = 0;
         x/=10;
     }
