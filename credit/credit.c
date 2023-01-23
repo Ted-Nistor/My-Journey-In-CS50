@@ -46,7 +46,7 @@ void check_sum(long x)
     {
         num = (x/10)%10;
         printf("%i", num);
-        if(num * 2 > 9)
+        if(num * 2 >= 10)
         {
          above_ten=(num*2)%10 + num/10;
          sum+=above_ten;
