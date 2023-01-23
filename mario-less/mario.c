@@ -6,10 +6,13 @@ int main(void)
     int height = 3;
     for (int i=0;i<height;i++)
     {
-        
-        for(int j=height-i;j<=height ;j++)
+
+        for(int j=0;j<=height ;j++)
         {
-        printf("#");
+            if (j == (height-i))
+            {
+                printf(".");
+            }
         }
     printf("\n");
     }
