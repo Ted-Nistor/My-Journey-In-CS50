@@ -51,10 +51,10 @@ void check_sum(long x)
 
     for (int i = 0 ; i < x ; i++)
     {
-        num = x%10/10;
+        num = (x/10)%10;
         printf("%i", num);
         num = 0;
-        x/=10;
+        x/=100;
     }
     printf("\n");
 }
