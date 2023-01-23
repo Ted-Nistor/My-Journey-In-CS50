@@ -11,7 +11,7 @@ int main(void)
 {
     // Ask how many cents the customer is owed
     int cents = get_cents();
-    printf("Cents: %i\n",cents);
+    printf("Cents: %i\n", cents);
 
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
@@ -90,7 +90,7 @@ int calculate_nickels(int cents)
 
 int calculate_pennies(int cents)
 {
-    //Make an if else statement so that if the number of cents = 1, return 1 penny, else return cent/1 nickels
+    //Make an if else statement so that if the number of cents = 1, return 1 penny, else return cents = nickels
     if (cents == 5)
     {
         return 1;
