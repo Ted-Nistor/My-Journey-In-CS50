@@ -6,7 +6,6 @@ int main(void)
 {
 //Prompt the height of the blocks
     int height = get_size();
-    printf("%i\n",height);
 //Print the number of rows equal to height ;
     for (int rows = 0 ; rows < height ; rows++)
     {
