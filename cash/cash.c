@@ -51,8 +51,15 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
-    // TODO
-    return 0;
+    // Make an if else statements so that if the number of cents = 25 , return 1 quarter, else return cent%25 quarters
+    if (cents == 25)
+    {
+        return 1;
+    }
+    else
+    {
+        return cents % 25;
+    }
 }
 
 int calculate_dimes(int cents)
