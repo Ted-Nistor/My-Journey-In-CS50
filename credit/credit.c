@@ -35,7 +35,7 @@ int length(long x)
     return counter;
 }
 
-bool check_sum(long x)
+void check_sum(long x)
 {
     
 }
