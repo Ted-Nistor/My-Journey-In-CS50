@@ -40,7 +40,10 @@ int length(long x)
 int check_digits(long x)
 {
     int first_set=0;
-    for (int digits = x ; dig)
+    while(x > 0)
+    {
+        
+    }
 
 
     return first_set
