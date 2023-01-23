@@ -1,55 +1,55 @@
-// #include <cs50.h>
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     int height;
-//     do
-//     {
-//         height = get_int("Height: ");
-//     }
-//     while(height < 1 || height > 8);
-//     for (int i=0;i<height;i++)
-//     {
-
-//         for(int j=0;j<=height ;j++)
-//         {
-//             if (j < (height-i))
-//             {
-//                 printf(" ");
-//             }
-//             else
-//             {
-//                 printf("#");
-//             }
-//         }
-//     printf("\n");
-//     }
-
-// }
-
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    int height; //declare int variable Height
+    int height;
     do
     {
         height = get_int("Height: ");
     }
-    while (height < 1 || height > 8);  //make sure height is not less than 1 or greater than 8
-
-    for (int row = 0; row < height; row++) //to print new line as ROW
+    while(height < 1 || height > 8);
+    for (int i=0;i<height;i++)
     {
-        for (int space = height - row - 1; space > 0; space--) //to print SPACE
+
+        for(int j=0;j<=height ;j++)
         {
-            printf(" ");
+            if (j < (height-i))
+            {
+                printf(" ");
+            }
+            else
+            {
+                printf("#");
+            }
         }
-        for (int hash = 0; hash < row + 1; hash++) //to print hashes(#)
-        {
-            printf("#");
-        }
-        printf("\n");
+    printf("\n");
     }
+
 }
+
+// #include <cs50.h>
+// #include <stdio.h>
+
+// int main(void)
+// {
+//     int height; //declare int variable Height
+//     do
+//     {
+//         height = get_int("Height: ");
+//     }
+//     while (height < 1 || height > 8);  //make sure height is not less than 1 or greater than 8
+
+//     for (int row = 0; row < height; row++) //to print new line as ROW
+//     {
+//         for (int space = height - row - 1; space > 0; space--) //to print SPACE
+//         {
+//             printf(" ");
+//         }
+//         for (int hash = 0; hash < row + 1; hash++) //to print hashes(#)
+//         {
+//             printf("#");
+//         }
+//         printf("\n");
+//     }
+// }
