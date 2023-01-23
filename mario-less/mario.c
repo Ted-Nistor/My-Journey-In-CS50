@@ -3,15 +3,19 @@
 
 int main(void)
 {
-    int height = 3;
-    for (int i=0;i<height;i++)
+    int height = get_int("Height: ");
+    for (int i=0;i<=height;i++)
     {
 
         for(int j=0;j<=height ;j++)
         {
-            if (j == (height-i))
+            if (j < (height-i))
             {
-                printf(".");
+                printf(" ");
+            }
+            else
+            {
+                printf("#");
             }
         }
     printf("\n");
