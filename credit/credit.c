@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 long prompt_card(void);
-int card_length(long x)
+int length(long x);
 int main(void)
 {
     long card = prompt_card();
@@ -23,7 +23,7 @@ long prompt_card(void)
     return card;
 }
 
-int length(long x);
+int length(long x)
 {
     int counter = 0;
     while (x > 0)
@@ -31,5 +31,5 @@ int length(long x);
         x= x / 10;
         counter++;
     }
-    return (counter+1);
+    return counter;
 }
