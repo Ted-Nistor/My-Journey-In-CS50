@@ -38,7 +38,7 @@ int length(long x)
 }
 
 void check_sum(long x)
-{
+{   int sum = 0;
     int num = 0;
     printf("First_Set: ");
     for (int i = 0 ; i < x ; i++)
