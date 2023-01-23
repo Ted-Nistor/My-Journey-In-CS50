@@ -3,7 +3,7 @@
 
 long prompt_card(void);
 int length(long x);
-void print_digits(long x);
+void check_digits(long x);
 int main(void)
 {
     long card = prompt_card();
@@ -36,7 +36,7 @@ int length(long x)
     return counter;
 }
 
-void print_digits(long x)
+void check_digits(long x)
 {
     int digits;
     while(x > 0)
