@@ -38,12 +38,6 @@ int length(long x)
 
 void check_digits(long x)
 {
-    int digits;
-    while(x > 0)
-    {
-        digits = x % 10;
-        printf("%i ",digits);
-        x/=10;
-    }
+    for (int digits = x ; digits)
 }
 
