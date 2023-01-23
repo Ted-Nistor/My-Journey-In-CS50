@@ -49,18 +49,18 @@ void check_sum(long x)
         printf("%i\n", num);
         times_two= num*2;
         printf("%i * 2 = %i\n",num,times_two);
-        // if(num * 2 >= 10)
-        // {
-        //  above_ten=(num*2)%10 + num/10;
-        //  sum+=above_ten;
+        if(times_two >= 10)
+        {
+         above_ten=times_two%10 + num/10;
+         sum+=above_ten;
 
-        // }
-        // else{
-        //     sum+=num;
-        // }
+        }
+        else{
+            sum+=(num*2);
+        }
         num = 0;
         x/=100;
     }
     printf("\n");
-    // printf("Sum= %i\n",sum);
+    printf("Sum= %i\n",sum);
 }
