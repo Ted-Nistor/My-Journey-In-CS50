@@ -10,7 +10,7 @@ int main(void)
     printf("Card Number: %li\n", card);
     int card_length = length(card);
     printf("Card Length: %i\n", card_length);
-    print_digits(card);
+    check_digits(card);
 }
 
 
@@ -45,10 +45,22 @@ void check_digits(long x)
         digits = x%10;
         if(digits * 2 > 9)
         {
-            
+         int counter;
+         do
+         {
+            counter = digits%10;
+            digits/=10;
+            first_set+=counter;
+         }
+         while(digits > 0);
+        }
+        else
+        {
+            first_set+=digits;
         }
 
     }
     while(digits > 0);
+    return first_set;
 }
 
