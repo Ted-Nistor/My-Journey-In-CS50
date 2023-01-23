@@ -8,6 +8,7 @@ int main(void)
     {
         for(int j=height-i;j<=height ;j++)
         {
+        if (j)
         printf("#");
         }
     printf("\n");
