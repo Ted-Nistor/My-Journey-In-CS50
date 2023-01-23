@@ -49,7 +49,7 @@ void check_sum(long x)
     //     x/=10;
     // }
 
-    for (int i = x ; i > 0 ; i/=100)
+    for (int i = 4 ; i > 0 ; i-=2)
     {
         num = x%10;
         printf("%i", num);
