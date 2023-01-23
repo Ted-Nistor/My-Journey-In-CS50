@@ -77,12 +77,26 @@ int calculate_dimes(int cents)
 
 int calculate_nickels(int cents)
 {
-    // TODO
-    return 0;
+    //Make an if else statement so that if the number of cents = 5, return 1 nickel, else return cent/5 nickels
+    if (cents == 5)
+    {
+        return 1;
+    }
+    else
+    {
+        return cents / 5 ;
+    }
 }
 
 int calculate_pennies(int cents)
 {
-    // TODO
-    return 0;
+    //Make an if else statement so that if the number of cents = 1, return 1 penny, else return cent/1 nickels
+    if (cents == 5)
+    {
+        return 1;
+    }
+    else
+    {
+        return cents;
+    }
 }
