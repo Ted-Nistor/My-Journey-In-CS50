@@ -40,11 +40,10 @@ int length(long x)
 void check_sum(long x)
 {   int sum = 0;
     int num = 0;
-    printf("First_Set: \n");
+    printf("First_Set: ");
     for (int i = 0 ; i < x ; i++)
     {
         num = (x/10)%10;
-        printf("%i\n", num);
         num*=2;
         if(num >= 10)
         {
