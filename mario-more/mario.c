@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_size (void);
+int get_size(void);
 int main(void)
 {
 //Prompt the height of the blocks
@@ -10,7 +10,7 @@ int main(void)
     for (int rows = 0 ; rows < height ; rows++)
     {
 //Print spaces before #
-        for (int space = (height-rows-1); space > 0 ; space-- )
+        for (int space = (height - rows - 1); space > 0 ; space--)
         {
             printf(" ");
         }
@@ -26,13 +26,13 @@ int main(void)
         {
             printf("#");
         }
-    printf("\n");
+        printf("\n");
     }
 
 }
 
 
-int get_size ()
+int get_size()
 {
     int n;
     do
