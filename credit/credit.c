@@ -3,6 +3,7 @@
 
 long prompt_card(void);
 int length(long x);
+void check_sum(long x);
 
 int main(void)
 {
@@ -10,6 +11,7 @@ int main(void)
     printf("Card Number: %li\n", card);
     int card_length = length(card);
     printf("Card Length: %i\n", card_length);
+    check_sum(card);
 }
 
 
@@ -37,5 +39,12 @@ int length(long x)
 
 void check_sum(long x)
 {
-    
+    int num = 0;
+    while (x > 0)
+    {
+        num = x%10;
+        printf("Num: %i \n", num);
+        num = 0;
+        x/=10;
+    }
 }
