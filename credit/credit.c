@@ -59,6 +59,7 @@ int check_digits(long x)
         {
             first_set+=digits;
         }
+        digits/=10;
 
     }
     while(digits > 0);
