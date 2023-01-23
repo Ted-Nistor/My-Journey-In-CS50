@@ -38,10 +38,17 @@ int length(long x)
 
 void check_digits(long x)
 {
-    int first_set = 0;
-    for (int digits = x ; digits > 0; digits-=2)
+    int first_set=0;
+    int digits;
+    do
     {
-        if ()
+        digits = x%10;
+        if(digits * 2 > 9)
+        {
+            
+        }
+
     }
+    while(digits > 0);
 }
 
