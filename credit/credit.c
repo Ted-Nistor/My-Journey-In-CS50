@@ -3,12 +3,14 @@
 
 long prompt_card(void);
 int length(long x);
+void print_digits(long x);
 int main(void)
 {
     long card = prompt_card();
     printf("Card Number: %li\n", card);
     int card_length = length(card);
     printf("Card Length: %i\n", card_length);
+    print_digits(card);
 }
 
 
@@ -40,8 +42,8 @@ void print_digits(long x)
     while(x > 0)
     {
         digits = x % 10;
+        printf("%i ",digits);
         x/=10;
-        printf()
     }
 }
 
