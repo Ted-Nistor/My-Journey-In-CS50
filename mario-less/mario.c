@@ -14,7 +14,7 @@ int main(void)
 
         for(int j=0;j<=height ;j++)
         {
-            if (j < (height-i))
+            if (j < height-i)
             {
                 printf(" ");
             }
