@@ -50,7 +50,7 @@ void check_sum(long x)
         {
          above_ten=(num*2)%10 + num/10;
          sum+=above_ten;
-         above_ten = 0;
+         
         }
         else{
             sum+=num;
