@@ -36,6 +36,12 @@ int length(long x)
 
 void print_digits(long x)
 {
-    int
+    int digits;
+    while(x > 0)
+    {
+        digits = x % 10;
+        x/=10;
+        printf()
+    }
 }
 
