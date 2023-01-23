@@ -1,6 +1,5 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <math.h>
 
 long prompt_card(void);
 int length(long x);
@@ -35,4 +34,8 @@ int length(long x)
     return counter;
 }
 
+void print_digits(long x)
+{
+    int
+}
 
