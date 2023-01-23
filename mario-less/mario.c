@@ -8,13 +8,13 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while(height < 1 || height > 8);
-    for (int i=0;i<height;i++)
+    while (height < 1 || height > 8);
+    for (int i = 0; i < height ; i++)
     {
 
-        for(int j=0;j<=height ;j++)
+        for (int j = 0; j <= height ; j++)
         {
-            if (j < (height-i))
+            if (j < (height - i))
             {
                 printf(" ");
             }
@@ -23,7 +23,7 @@ int main(void)
                 printf("#");
             }
         }
-    printf("\n");
+        printf("\n");
     }
 
 }
