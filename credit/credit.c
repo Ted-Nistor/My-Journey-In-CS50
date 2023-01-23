@@ -2,10 +2,13 @@
 #include <stdio.h>
 
 long prompt_card(void);
+int card_length(long x)
 int main(void)
 {
     long card = prompt_card();
     printf("Card Number: %li\n", card);
+    int card_length = length(card);
+    printf("Card Length: %i\n", card_length);
 }
 
 
@@ -18,4 +21,15 @@ long prompt_card(void)
     }
     while (card < 1);
     return card;
+}
+
+int length(long x);
+{
+    int counter = 0;
+    while (x > 0)
+    {
+        x= x / 10;
+        counter++;
+    }
+    return (counter+1);
 }
