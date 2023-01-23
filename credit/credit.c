@@ -38,6 +38,9 @@ int length(long x)
 
 void check_digits(long x)
 {
-    for (int digits = x ; digits)
+    for (int digits = x ; digits > 0; digits-=2)
+    {
+        
+    }
 }
 
