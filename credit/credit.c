@@ -48,10 +48,9 @@ void check_sum(long x)
         num = (x/10)%10;
         printf("%i\n", num);
         times_two= num*2;
-        printf("%i * 2 = %i\n",num,times_two);
         if(times_two >= 10)
         {
-         above_ten=times_two%10 + num/10;
+         above_ten=(times_two%10 + num/10)*2;
          sum+=above_ten;
 
         }
