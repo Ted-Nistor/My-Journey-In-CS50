@@ -50,11 +50,6 @@ int main(void)
         {
             printf("#");
         }
-        printf("  ");
-        for (int right_hash = 0; right_hash < row + 1; right_hash++ )
-        {
-            printf("#");
-        }
         printf("\n");
     }
 }
