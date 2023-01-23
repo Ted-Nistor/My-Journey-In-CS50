@@ -58,7 +58,7 @@ int calculate_quarters(int cents)
     }
     else
     {
-        return cents % 25;
+        return cents / 25;
     }
 }
 
