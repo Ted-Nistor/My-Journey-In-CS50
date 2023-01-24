@@ -62,28 +62,21 @@ int first_sum(long x)
 
     printf("\n");
     printf("First Sum = %i\n",sum);
-    for (int j = 0 ; j < x ; j++)
-    {
-        num2 = x%10;
-        sum+=num2;
-        x/=100;
-    }
-    printf("Final Sum = %i\n",sum);
      return sum;
 }
 
-// int second_sum(long x)
-// {
-//     int num = 0;
-//     int sum = 0;
-//     for  (int i = 0;i<x;i++)
-//     {
-//         num = x%10;
-//         sum+=num;
-//         x/=100;
-//     }
-//     printf("Second Sum = %i \n", sum);
-//     return sum;
+int second_sum(long x)
+{
+    int num = 0;
+    int sum = 0;
+    for  (int i = 0;i<x;i++)
+    {
+        num = x%10;
+        sum+=num;
+        x/=100;
+    }
+    printf("Second Sum = %i \n", sum);
+    return sum;
 
-// }
+}
 
