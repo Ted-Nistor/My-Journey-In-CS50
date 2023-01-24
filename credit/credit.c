@@ -35,6 +35,13 @@ int main(void)
                 printf("AMEX\n");
             }
         }
+        else if (card_length == 13 || card_length == 16)
+        {
+            if (first_dg / 10 == 4)
+            {
+                printf("VISA\n");
+            }
+        }
     }
     else
     {
