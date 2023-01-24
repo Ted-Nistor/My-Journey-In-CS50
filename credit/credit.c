@@ -19,47 +19,7 @@ int main(void)
     int first_dg = first_digits(card);
     // printf("First digits: %i\n",first_dg);
 
-    if(check_sum % 10 == 0)
-    {
-        if (card_length == 16)
-        {
-            if  (first_dg == 51 || first_dg == 52 || first_dg == 53 || first_dg == 54 || first_dg == 55)
-            {
-                printf ("MASTERCARD\n");
-            }
-            // else
-            // {
-            //     printf ("INVALID\n");
-            // }
-        }
-        else if (card_length == 15)
-        {
-            if (first_dg == 34 || first_dg == 37)
-            {
-                printf("AMEX\n");
-            }
-            // else
-            // {
-            //     printf ("INVALID\n");
-            // }
-        }
-        else if (card_length == 13 || card_length == 16)
-        {
-            if (first_dg / 10 == 4)
-            {
-                printf("VISA\n");
-            }
-            // else
-            // {
-            //     printf ("INVALID\n");
-            // }
-        }
-    }
-    else
-    {
-        printf("INVALID\n");
-    }
-
+   
 }
 
 
