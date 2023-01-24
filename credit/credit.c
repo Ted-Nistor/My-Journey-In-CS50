@@ -17,7 +17,23 @@ int main(void)
     int check_sum = first_sum(card)+second_sum(card);
     printf("Final Sum = %i\n",check_sum);
     int first_dg = first_digits(card);
-    printf("first digits: %i\n",first_dg);
+    printf("First digits: %i\n",first_dg);
+
+    if(check_sum % 10 == 0)
+    {
+        if (card_length == 16)
+        {
+            if  (first_dg / 10 == 5 && 0 < first_dg < 6)
+            {
+                printf ("MASTERCARD\n");
+            }
+            else if ()
+        }
+    }
+    else
+    {
+        printf("INVALID\n");
+    }
 
 }
 
