@@ -57,13 +57,15 @@ void check_sum(long x)
         num = 0;
         x/=100;
     }
+
     printf("\n");
+    printf("Sum = %i\n",sum);
     for (int j = 0 ; j < x ; j++)
     {
         num = x%10;
         sum+=num;
         x/=100;
     }
-    printf("Sum = %i\n",sum);
+
 
 }
