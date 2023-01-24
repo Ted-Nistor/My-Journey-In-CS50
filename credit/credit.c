@@ -75,12 +75,13 @@ int first_sum(long x)
 void second_sum(long x)
 {
     int num = 0;
-    for  (i = 0;i<x;i++)
+    int sum = 0;
+    for  (int i = 0;i<x;i++)
     {
         num = x%10;
         sum+=num;
         x/=100;
     }
-    printf("Final Sum = %i \n", sum)
+    printf("Second Sum = %i \n", sum)
 
 }
