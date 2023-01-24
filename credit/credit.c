@@ -27,7 +27,13 @@ int main(void)
             {
                 printf ("MASTERCARD\n");
             }
-            else if ()
+        }
+        else if (card_length == 15)
+        {
+            if (first_dg / 10 == 3 && first_dg % 10 == 4 || first_dg % 10 == 7)
+            {
+                printf("AMEX\n");
+            }
         }
     }
     else
