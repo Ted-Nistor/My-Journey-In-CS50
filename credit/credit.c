@@ -86,7 +86,3 @@ int second_sum(long x)
 
 }
 
-bool check_valid(long x)
-{
-    
-}
