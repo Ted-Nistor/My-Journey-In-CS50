@@ -64,7 +64,7 @@ int first_sum(long x)
 
     printf("\n");
     printf("First Sum = %i\n",sum);
-     return sum;
+    return sum;
 }
 
 int second_sum(long x)
@@ -82,8 +82,4 @@ int second_sum(long x)
 
 }
 
-int card_start(long x)
-{
-    
-}
-
+int
