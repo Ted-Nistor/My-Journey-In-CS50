@@ -27,6 +27,10 @@ int main(void)
             {
                 printf ("MASTERCARD\n");
             }
+            else
+            {
+                printf ("INVALID\n");
+            }
         }
         else if (card_length == 15)
         {
@@ -34,12 +38,20 @@ int main(void)
             {
                 printf("AMEX\n");
             }
+            else
+            {
+                printf ("INVALID\n");
+            }
         }
         else if (card_length == 13 || card_length == 16)
         {
             if (first_dg / 10 == 4)
             {
                 printf("VISA\n");
+            }
+            else
+            {
+                printf ("INVALID\n");
             }
         }
     }
