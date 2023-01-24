@@ -63,6 +63,7 @@ void check_sum(long x)
     for (int j = 0 ; j < x ; j++)
     {
         num = x%10;
-        printf()
+        printf("%i, \n",num);
+        x/=100;
     }
 }
