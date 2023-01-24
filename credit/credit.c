@@ -24,7 +24,23 @@ int main(void)
         printf("INVALID\n");
         return 0;
     }
-    
+
+    if ((first_dg /10 == 5) && (0 < first_dg % 10 && first_dg % 10 < 6))
+    {
+        printf("MASTERCARD\n");
+    }
+    else if ((first_dg == 34) || (first_dg) == 37)
+    {
+        printf("AMEX\n");
+    }
+    else if (first_dg / 10 == 4)
+    {
+        printf("VISA\n");
+    }
+    else
+    {
+        printf("INVALID\n");
+    }
 }
 
 
