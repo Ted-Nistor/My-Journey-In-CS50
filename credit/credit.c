@@ -59,8 +59,10 @@ void check_sum(long x)
     }
     printf("\n");
     printf("Sum = %i\n",sum);
+    printf("Second_Set: ");
     for (int j = 0 ; j < x ; j++)
     {
-        num =
+        num = x%10;
+        printf()
     }
 }
