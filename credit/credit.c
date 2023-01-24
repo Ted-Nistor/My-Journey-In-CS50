@@ -29,7 +29,7 @@ int main(void)
     {
         printf("MASTERCARD\n");
     }
-    else if ((first_dg == 34) || (first_dg) == 37)
+    else if ((first_dg / 10 == 3) && (first_dg % 10 == 4 || first_dg % 10 == 7))
     {
         printf("AMEX\n");
     }
