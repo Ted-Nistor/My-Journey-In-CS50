@@ -23,14 +23,14 @@ int main(void)
     {
         if (card_length == 16)
         {
-            if  (first_dg / 10 == 5 && 0 < first_dg < 6)
+            if  (first_dg == 51 || first_dg == 52 || first_dg == 53 || first_dg == 54 || first_dg == 55)
             {
                 printf ("MASTERCARD\n");
             }
         }
         else if (card_length == 15)
         {
-            if (first_dg / 10 == 3 && first_dg % 10 == 4 || first_dg % 10 == 7)
+            if (first_dg == 34 || first_dg == 37)
             {
                 printf("AMEX\n");
             }
