@@ -19,7 +19,12 @@ int main(void)
     int first_dg = first_digits(card);
     // printf("First digits: %i\n",first_dg);
 
-   
+    if (check_sum % 10 != 0)
+    {
+        printf("INVALID\n");
+        return 0;
+    }
+    
 }
 
 
