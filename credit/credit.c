@@ -15,7 +15,7 @@ int main(void)
     int card_length = length(card);
     // printf("Card Length: %i\n", card_length);
     int check_sum = first_sum(card)+second_sum(card);
-    // printf("Final Sum = %i\n",check_sum);
+    printf("Final Sum = %i\n",check_sum);
     int first_dg = first_digits(card);
     // printf("First digits: %i\n",first_dg);
 
@@ -87,8 +87,8 @@ int first_sum(long x)
         x/=100;
     }
 
-    // printf("\n");
-    // printf("First Sum = %i\n",sum);
+    printf("\n");
+    printf("First Sum = %i\n",sum);
     return sum;
 }
 
@@ -102,7 +102,7 @@ int second_sum(long x)
         sum+=num;
         x/=100;
     }
-    // printf("Second Sum = %i \n", sum);
+    printf("Second Sum = %i \n", sum);
     return sum;
 
 }
@@ -114,5 +114,6 @@ int first_digits (long x)
     {
     digits = x/=10;
     }
+    printf("First Digits: \n",digits)
     return digits;
 }
