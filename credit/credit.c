@@ -58,12 +58,12 @@ void check_sum(long x)
         x/=100;
     }
     printf("\n");
-    printf("Sum = %i\n",sum);
-    printf("Second_Set: ");
     for (int j = 0 ; j < x ; j++)
     {
         num = x%10;
-        printf("%i, \n",num);
+        sum+=num;
         x/=100;
     }
+    printf("Sum = %i\n",sum);
+
 }
