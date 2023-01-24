@@ -4,7 +4,7 @@
 long prompt_card(void);
 int length(long x);
 int first_sum(long x);
-void second_sum(long x);
+int second_sum(long x);
 
 int main(void)
 {
@@ -12,8 +12,8 @@ int main(void)
     printf("Card Number: %li\n", card);
     int card_length = length(card);
     printf("Card Length: %i\n", card_length);
-    first_sum(card);
-    second_sum(card);
+    int check = first_sum(card)+ second_sum(card);
+    printf("Final Sum = %i\n",check);
 }
 
 
@@ -72,7 +72,7 @@ int first_sum(long x)
      return sum;
 }
 
-void second_sum(long x)
+int second_sum(long x)
 {
     int num = 0;
     int sum = 0;
@@ -82,6 +82,7 @@ void second_sum(long x)
         sum+=num;
         x/=100;
     }
-    printf("Second Sum = %i \n", sum)
+    printf("Second Sum = %i \n", sum);
+    return sum;
 
 }
