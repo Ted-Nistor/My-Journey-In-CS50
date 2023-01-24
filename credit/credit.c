@@ -42,7 +42,6 @@ int length(long x)
 int first_sum(long x)
 {   int sum = 0;
     int num = 0;
-    printf("First_Set: ");
     for (int i = 0 ; i < x ; i++)
     {
         num = (x/10)%10;
@@ -61,7 +60,7 @@ int first_sum(long x)
     }
 
     printf("\n");
-    printf("Sum = %i\n",sum);
+    printf("First Sum = %i\n",sum);
     for (int j = 0 ; j < x ; j++)
     {
         num = x%10;
@@ -85,4 +84,9 @@ int second_sum(long x)
     printf("Second Sum = %i \n", sum);
     return sum;
 
+}
+
+bool check_valid(long x)
+{
+    
 }
