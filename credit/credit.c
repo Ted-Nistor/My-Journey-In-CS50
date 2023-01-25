@@ -96,7 +96,7 @@ int second_sum(long x)
 {
     int num = 0;
     int sum = 0;
-    for  (int i = 0;i<x;i++)
+    while (x > 0)
     {
         num = x%10;
         sum+=num;
@@ -112,7 +112,7 @@ int first_digits (long x)
     int digits = 0;
     while (x > 100)
     {
-    digits = x/=10;
+        digits = x/=10;
     }
     return digits;
 }
