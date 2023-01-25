@@ -25,6 +25,8 @@ int main(void)
         return 0;
     }
 
+    
+
     if ((first_dg /10 == 5) && (0 < first_dg % 10 && first_dg % 10 < 6))
     {
         printf("MASTERCARD\n");
