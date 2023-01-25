@@ -98,8 +98,8 @@ int second_sum(long x)
     int sum = 0;
     while (x > 0)
     {
-        num = x%10;
-        sum+=num;
+        num = x %10;
+        sum +=num;
         x/=100;
     }
     // printf("Second Sum = %i \n", sum);
@@ -107,12 +107,12 @@ int second_sum(long x)
 
 }
 
-int first_digits (long x)
+int first_digits(long x)
 {
     int digits = 0;
     while (x > 99)
     {
-        digits = x/=10;
+        digits = x /= 10;
     }
     return digits;
 }
