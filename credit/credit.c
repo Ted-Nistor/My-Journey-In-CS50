@@ -87,7 +87,7 @@ int first_sum(long x)
         x/=100;
     }
 
-    printf("\n");
+    // printf("\n");
     // printf("First Sum = %i\n",sum);
     return sum;
 }
