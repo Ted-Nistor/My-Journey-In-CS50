@@ -70,7 +70,7 @@ int first_sum(long x)
 {   int sum = 0;
     int num1 = 0;
     int num2 = 0;
-    for (int i = 0 ; i < x ; i++)
+    while(x > 0)
     {
         num1 = (x/10)%10;
         num1*=2;
