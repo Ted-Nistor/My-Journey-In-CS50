@@ -25,17 +25,15 @@ int main(void)
         return 0;
     }
 
-    
-
-    if ((first_dg /10 == 5) && (0 < first_dg % 10 && first_dg % 10 < 6))
+    if ((first_dg /10 == 5) && (0 < first_dg % 10 && first_dg % 10 < 6) && (card_length == 16))
     {
         printf("MASTERCARD\n");
     }
-    else if ((first_dg / 10 == 3) && (first_dg % 10 == 4 || first_dg % 10 == 7))
+    else if ((first_dg / 10 == 3) && (first_dg % 10 == 4 || first_dg % 10 == 7) && (card_length == 15))
     {
         printf("AMEX\n");
     }
-    else if (first_dg / 10 == 4)
+    else if ((first_dg / 10 == 4) && (card_length == 13 || card_length == 16))
     {
         printf("VISA\n");
     }
