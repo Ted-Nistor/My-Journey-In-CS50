@@ -88,7 +88,7 @@ int first_sum(long x)
     }
 
     printf("\n");
-    printf("First Sum = %i\n",sum);
+    // printf("First Sum = %i\n",sum);
     return sum;
 }
 
@@ -102,7 +102,7 @@ int second_sum(long x)
         sum+=num;
         x/=100;
     }
-    printf("Second Sum = %i \n", sum);
+    // printf("Second Sum = %i \n", sum);
     return sum;
 
 }
