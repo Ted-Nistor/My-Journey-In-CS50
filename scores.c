@@ -3,8 +3,8 @@
 
 const int N = 3;
 float average(int length, int array[]);
-i
-nt main(void)
+
+int main(void)
 {
     int scores[N];
     for (int i = 0 ; i < N ; i++)
