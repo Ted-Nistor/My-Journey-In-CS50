@@ -2,7 +2,7 @@
 #include <cs50.h>
 
 const int N = 3;
-float average(int array[]);
+float average(int length, int array[]);
 i
 nt main(void)
 {
@@ -12,15 +12,15 @@ nt main(void)
         scores[i] = get_int("Score:");
     }
 
-    printf("Average: %f\n", average(scores));
+    printf("Average: %f\n", average(N,scores));
 }
 
-float average(int array[])
+float average(int length, int array[])
 {
     int sum = 0;
     for (int i = 0; i < N ; i++)
     {
         sum += array[i];
     }
-    return sum / (float) N;
+    return sum / (float) length;
 }
