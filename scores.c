@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+const int N = 3;
 float average(int array[]);
 int main(void)
 {
@@ -15,5 +16,5 @@ int main(void)
 
 float average(int array[])
 {
-    
+
 }
