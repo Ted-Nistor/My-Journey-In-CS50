@@ -19,12 +19,7 @@ int main(void)
     {
         output = toupper(get_char("Enter T for total hours, A for average hours per week: "));
     }
-    while (output != 'T' && output != 'A');
-    for (int i = 0 ; i < weeks ; i++)
-    {
-        printf("Hours: %i, ", hours[i]);
-    }
-    printf("\n");
+   
 
     // printf("%.1f hours\n", calc_hours(hours, weeks, output));
 }
