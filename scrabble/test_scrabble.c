@@ -16,6 +16,6 @@ int main(void)
     printf("the word has %i letters\n", n);
     for (int i = 0 ; i < n ; i++)
     {
-        return ("%d",word[i]);
+        printf("%d", word[i]);
     }
 }
