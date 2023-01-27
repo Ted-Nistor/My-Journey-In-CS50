@@ -2,7 +2,6 @@
 #include <ctype.h>
 #include <stdio.h>
 
-float calc_hours(int hours[], int weeks, char output);
 
 int main(void)
 {
@@ -32,11 +31,6 @@ int main(void)
         printf("A: %.1f hours\n", (float) sum / weeks);
     }
 
-    // printf("%.1f hours\n", calc_hours(hours, weeks, output));
+
 }
 
-// TODO: complete the calc_hours function
-// float calc_hours(int hours[], int weeks, char output)
-// {
-
-// }
