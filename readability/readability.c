@@ -45,5 +45,5 @@ int count_words(string paragraph)
     }
     while (i < strlen(paragraph));
 
-    return words;
+    return words > 0 ;
 }
