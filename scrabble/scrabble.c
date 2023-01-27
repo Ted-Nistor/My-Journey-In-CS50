@@ -25,15 +25,22 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    // 1. convert each letter to upper case.
+
+
+}
+
+int string_to_ascii (string word)
+{
+    // initialize variable that will become = to string converted into ascii
+    int ascii;
+    // convert each letter to upper case.
     for (int i = 0 ; i < strlen(word) ; i ++)
     {
         word[i] = toupper(word[i]);
     }
-    // 2. convert each uppercase letter to ascii
+    // convert each uppercase letter to ascii
     for (int j = 0 ; j < strlen(word); j ++)
     {
-
+        ascii = printf("%d)
     }
-
 }
