@@ -30,7 +30,7 @@ bool valid(string password)
     {
         if (isalpha(password[i]))
         {
-            if(password[i] == tolower(password[i]))
+            if (password[i] == tolower(password[i]))
             {
                 lower++;
             }
@@ -48,12 +48,12 @@ bool valid(string password)
             symbol++;
         }
     }
-    if (upper >= 1 && lower >=1 && number >= 1 && symbol >= 1)
+    if (upper >= 1 && lower >= 1 && number >= 1 && symbol >= 1)
     {
         return true;
     }
     else
     {
-    return false;
+        return false;
     }
 }
