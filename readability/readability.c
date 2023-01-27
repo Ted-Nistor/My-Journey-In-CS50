@@ -9,7 +9,8 @@ int count_words(string paragraph);
 int main(void)
 {
     // get string input from the user and print it.
-    
+
+    string paragraph = get_string("Text: ");
     printf("%s\n", paragraph);
     printf("%i letters\n", count_letters(paragraph));
     printf("%i words\n", count_words(paragraph));
