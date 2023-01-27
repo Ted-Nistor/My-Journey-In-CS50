@@ -23,7 +23,7 @@ int main(void)
     }
     while (output != 'T' && output != 'A');
 
-    printf("hours: %f", float(sum));
+    printf("hours: %.1f", (float) sum);
 
     // printf("%.1f hours\n", calc_hours(hours, weeks, output));
 }
