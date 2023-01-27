@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 
 
 float count_letters(string paragraph);
@@ -17,12 +18,12 @@ int main(void)
     float letters = count_letters(paragraph);
     float words = count_words(paragraph);
     float sentences = count_sentences(paragraph);
-    printf("%s\n", paragraph);
-    printf("%f letters\n", count_letters(paragraph));
-    printf("%f words\n", count_words(paragraph));
-    printf("%f sentences\n", count_sentences(paragraph));
+    // printf("%s\n", paragraph);
+    // printf("%f letters\n", count_letters(paragraph));
+    // printf("%f words\n", count_words(paragraph));
+    // printf("%f sentences\n", count_sentences(paragraph));
     index = ((letters / words) * 100) * 0.0588 - 0.296 * ((sentences / words) * 100) - 15.8;
-    printf("Grade %i\n", (int)index);
+    printf("Grade %i\n", (int)round(index));
 
 
 
