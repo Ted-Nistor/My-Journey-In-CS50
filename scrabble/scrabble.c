@@ -23,6 +23,10 @@ int main(void)
     // TODO: Print the winner
     printf("Score 1 : %d\n", score1);
     printf("Score 2 : %d\n", score2);
+    if (score1 > score2)
+    {
+        printf("Player 1 wind)
+    }
 }
 
 int compute_score(string word)
