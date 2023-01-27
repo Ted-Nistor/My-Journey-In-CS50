@@ -31,6 +31,10 @@ int count_letters(string paragraph)
 //initialize a word counter
 int count_words(string paragraph)
 {
-    int counter = 0;
-    
+    int words = 0;
+    for (int i = 0 ; i < strlen(paragraph) ; i++)
+    {
+        
+    }
+
 }
