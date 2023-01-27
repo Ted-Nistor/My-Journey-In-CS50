@@ -20,7 +20,9 @@ int main(void)
     printf("%i letters\n", count_letters(paragraph));
     printf("%i words\n", count_words(paragraph));
     printf("%i sentences\n", count_sentences(paragraph));
-    
+    index = (letters / words) * 100.0;
+    printf("Index = %f\n", index);
+
 
 
 }
