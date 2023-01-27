@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
+
 int count_letters(string paragraph);
 int count_words(string paragraph);
 int count_sentences(string paragraph);
@@ -20,7 +21,7 @@ int main(void)
     printf("%i letters\n", count_letters(paragraph));
     printf("%i words\n", count_words(paragraph));
     printf("%i sentences\n", count_sentences(paragraph));
-    index = (letters / words);
+    index = (letters / words * 100.00;
     printf("Index = %f\n", index);
 
 
