@@ -25,11 +25,11 @@ int main(void)
 
     if (output == 'T')
     {
-        printf("hours: %.1f\n", (float) sum);
+        printf("T: %.1f hours\n", (float) sum);
     }
     else
     {
-        printf("hours: %.1f\n", (float) sum / weeks);
+        printf("A: %.1f hours\n", (float) sum / weeks);
     }
 
     // printf("%.1f hours\n", calc_hours(hours, weeks, output));
