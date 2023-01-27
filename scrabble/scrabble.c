@@ -26,9 +26,19 @@ int compute_score(int ascii_word)
 {
     // TODO: Compute and return score for string
     int score = 0;
+    int index = 0;
     while (ascii_word >= 0)
     {
-        
+        index = ascii_word % 100 ;
+        for (int i = 0 ; i < 26 ; i++)
+        {
+            if (ascii_alphabet[i] == index)
+            {
+                index = ascii_alphabet[i];
+                score+= POINTS[index];
+                break;
+            }
+        }
     }
 
 }
