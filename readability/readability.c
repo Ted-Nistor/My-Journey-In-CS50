@@ -4,9 +4,9 @@
 #include <ctype.h>
 
 
-int count_letters(string paragraph);
-int count_words(string paragraph);
-int count_sentences(string paragraph);
+float count_letters(string paragraph);
+float count_words(string paragraph);
+float count_sentences(string paragraph);
 
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
 
     string paragraph = get_string("Text: ");
     float index;
-    int letters = count_letters(paragraph);
-    int words = count_words(paragraph);
-    int sentences = count_sentences(paragraph);
+    float letters = count_letters(paragraph);
+    float words = count_words(paragraph);
+    float sentences = count_sentences(paragraph);
     printf("%s\n", paragraph);
-    printf("%i letters\n", count_letters(paragraph));
-    printf("%i words\n", count_words(paragraph));
-    printf("%i sentences\n", count_sentences(paragraph));
-    index = (float)(letters / words);
-    printf("Index = %f\n", index);
+    printf("%f letters\n", count_letters(paragraph));
+    printf("%f words\n", count_words(paragraph));
+    printf("%f sentences\n", count_sentences(paragraph));
+    index = ((letters / words) * 100) * 0.0588 - 0.296 * ((sentences / words) * 100) - 15.8;
+    printf("Grade %i\n", (int)index);
 
 
 
@@ -30,9 +30,9 @@ int main(void)
 
 // make a letter counter by incrementing the counter if
 //the character is alphabetical
-int count_letters(string paragraph)
+float count_letters(string paragraph)
 {
-    int letters = 0;
+    float letters = 0;
     for (int i = 0 ; i < strlen(paragraph) ; i++)
     {
         if (isalpha(paragraph[i]))
@@ -44,9 +44,9 @@ int count_letters(string paragraph)
 }
 
 //initialize a word counter while the index of the paragraph is less than the length of the paragraph
-int count_words(string paragraph)
+float count_words(string paragraph)
 {
-    int words = 0;
+    float words = 0;
     int i = 0;
     do
     // (if the character is a space) or (if the next character is a '\0' and the current character is not a space),
@@ -63,9 +63,9 @@ int count_words(string paragraph)
 }
 
 //initialize a sentence counter and increment it by 1 whenever the index of the paragraph is == '.' or '?' or '!'.
-int count_sentences(string paragraph)
+float count_sentences(string paragraph)
 {
-    int sentences = 0;
+    float sentences = 0;
     int i = 0;
     while (i < strlen(paragraph))
     {
