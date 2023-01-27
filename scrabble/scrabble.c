@@ -7,8 +7,8 @@
 int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 int ascii_alphabet[] = {65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90};
 
-int compute_score(int ascii_word);
-int string_to_ascii (string word);
+int compute_score(long ascii_word);
+long string_to_ascii (string word);
 
 int main(void)
 {
@@ -27,7 +27,7 @@ int main(void)
     // printf("Score 2 : %d\n", score2);
 }
 
-int compute_score(int ascii_word)
+int compute_score(long ascii_word)
 {
     // TODO: Compute and return score for string
     int score = 0;
@@ -54,10 +54,10 @@ int compute_score(int ascii_word)
     return score;
 }
 
-int string_to_ascii (string word)
+long string_to_ascii (string word)
 {
     // initialize variable that will become = to string converted into ascii
-    int ascii;
+    long ascii;
     // convert each letter to upper case.
     for (int i = 0 ; i < strlen(word) ; i ++)
     {
