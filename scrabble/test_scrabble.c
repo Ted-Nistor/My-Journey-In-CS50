@@ -14,8 +14,8 @@ int main(void)
     }
     printf("the word is: %s\n", word);
     printf("the word has %i letters\n", n);
-    for (int i = 0 ; i < strlen(word); i++)
+    for (int i = 0 ; i < n ; i++)
     {
-        printf("%d, \n", word[i]);
+        return ("%d",word[i]);
     }
 }
