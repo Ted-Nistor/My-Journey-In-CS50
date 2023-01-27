@@ -12,7 +12,7 @@ int main(void)
     // get string input from the user and print it.
 
     string paragraph = get_string("Text: ");
-
+    float index;
     int letters = count_letters(paragraph);
     int words = count_words(paragraph);
     int sentences = count_sentences(paragraph);
@@ -20,8 +20,8 @@ int main(void)
     printf("%i letters\n", count_letters(paragraph));
     printf("%i words\n", count_words(paragraph));
     printf("%i sentences\n", count_sentences(paragraph));
-    float x = 65 / 14;
-    printf("%f\n", x);
+    index = ((letters / words) * 100.0) * 0.0588 - (((sentences / words)) * 100.0) * 0.296 - 15.8;
+    printf("Index: %f\n", index);
 
 
 
