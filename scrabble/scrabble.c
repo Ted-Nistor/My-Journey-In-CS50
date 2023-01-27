@@ -33,7 +33,7 @@ int compute_score(string word)
     // 2. convert each uppercase letter to ascii
     for (int j = 0 ; j < strlen(word); j ++)
     {
-        
+
     }
 
 }
