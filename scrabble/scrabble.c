@@ -41,6 +41,7 @@ int string_to_ascii (string word)
     // convert each uppercase letter to ascii
     for (int j = 0 ; j < strlen(word); j ++)
     {
-        ascii = printf("%d)
+        ascii = printf("%d", word[j]);
     }
+    return ascii;
 }
