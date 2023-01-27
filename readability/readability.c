@@ -13,6 +13,8 @@ int main(void)
     printf("%i letters\n", count_letters(paragraph));
 }
 
+// make a letter counter by incrementing the counter if
+//the character is alphabetical
 int count_letters(string paragraph)
 {
     int counter = 0;
@@ -24,4 +26,10 @@ int count_letters(string paragraph)
         }
     }
     return counter;
+}
+
+//initialize a word counter
+int count_words(string paragraph)
+{
+    
 }
