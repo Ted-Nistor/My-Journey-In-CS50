@@ -19,10 +19,12 @@ int main(void)
     // Score both words
     int ascii1 = string_to_ascii(word1);
     int ascii2 = string_to_ascii(word2);
-    int score1 = compute_score(word1);
-    int score2 = compute_score(word2);
+    int score1 = compute_score(ascii1);
+    int score2 = compute_score(ascii2);
 
     // TODO: Print the winner
+    printf("Score 1 : %d\n", score1);
+    printf("Score 2 : %d\n", score2);
 }
 
 int compute_score(int ascii_word)
