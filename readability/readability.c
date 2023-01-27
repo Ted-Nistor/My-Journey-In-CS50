@@ -3,12 +3,14 @@
 #include <string.h>
 #include <ctype.h>
 
+int count_letters(string paragraph);
+
 int main(void)
 {
     // get string input from the user and print it.
     string paragraph = get_string("Text: ");
     printf("%s\n", paragraph);
-
+    printf("%i letters\n", count_letters(paragraph));
 }
 
 int count_letters(string paragraph)
@@ -16,6 +18,10 @@ int count_letters(string paragraph)
     int counter = 0;
     for (int i = 0 ; i < strlen(paragraph) ; i++)
     {
-        if (paragraph[i])
+        if (isalpha(paragraph[i]))
+        {
+            counter++;
+        }
     }
+    return counter;
 }
