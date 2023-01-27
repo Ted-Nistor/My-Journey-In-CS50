@@ -23,7 +23,19 @@ int main(void)
     // printf("%f words\n", count_words(paragraph));
     // printf("%f sentences\n", count_sentences(paragraph));
     index = ((letters / words) * 100) * 0.0588 - 0.296 * ((sentences / words) * 100) - 15.8;
+    if (index >= 16)
+    {
+        printf("Grade 16+");
+    }
+    else if (index < 1)
+    {
+        printf("Before grade 1");
+    }
+    else
+    {
     printf("Grade %i\n", (int)round(index));
+
+    }
 
 
 
