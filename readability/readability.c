@@ -5,5 +5,8 @@
 
 int main(void)
 {
+    // get string input from the user and print it.
+    string paragraph = get_string("Text: ");
+    printf("%s\n", paragraph);
 
 }
