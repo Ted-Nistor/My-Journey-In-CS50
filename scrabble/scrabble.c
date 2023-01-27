@@ -57,7 +57,8 @@ int compute_score(int ascii_word)
 int string_to_ascii (string word)
 {
     // initialize variable that will become = to string converted into ascii
-    int ascii;
+    int ascii = 0;
+    int letters = 0;
     // int new_word = 0;
     // convert each letter to upper case.
     for (int i = 0 ; i < strlen(word) ; i ++)
@@ -68,10 +69,10 @@ int string_to_ascii (string word)
     for (int j = 0 ; j < strlen(word); j ++)
     {
         ascii = word[j];
-        ascii += printf("%d",ascii);
+        printf("%d",letters += ascii);
 
     }
         printf("\n");
-        printf("Acii code is : %i\n",ascii);
-        return ascii;
+        printf("Acii code is : %i\n", letters);
+        return letters;
 }
