@@ -59,13 +59,13 @@ int count_sentences(string paragraph)
 {
     int sentences = 0;
     int i = 0;
-    do
+    while (i < strlen(paragraph))
     {
         if (paragraph[i] == '.' || paragraph[i] == '!' || paragraph[i] == '?')
         {
             sentences++;
         }
+        i++;
     }
-    while (i < strlen(paragraph));
     return sentences;
 }
