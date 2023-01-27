@@ -21,7 +21,7 @@ int main(void)
     {
         output = toupper(get_char("Enter T for total hours, A for average hours per week: "));
     }
-    while (output != 'T' || output != 'A');
+    while (output != 'T' || output != 'A' || output != 't' || output != 'a');
 
     if (output == 'T')
     {
