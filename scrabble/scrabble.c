@@ -31,6 +31,9 @@ int compute_score(string word)
         word[i] = toupper(word[i]);
     }
     // 2. convert each uppercase letter to ascii
-    for (int j = 0 ; )
+    for (int j = 0 ; j < strlen(word); j ++)
+    {
+        
+    }
 
 }
