@@ -68,5 +68,6 @@ int string_to_ascii (string word)
     {
         ascii = printf("%d", word[j]);
     }
+    printf ("\n");
     return ascii;
 }
