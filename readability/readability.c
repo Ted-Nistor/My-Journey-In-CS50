@@ -18,10 +18,10 @@ int main(void)
     float letters = count_letters(paragraph);
     float words = count_words(paragraph);
     float sentences = count_sentences(paragraph);
-    // printf("%s\n", paragraph);
-    // printf("%f letters\n", count_letters(paragraph));
-    // printf("%f words\n", count_words(paragraph));
-    // printf("%f sentences\n", count_sentences(paragraph));
+    printf("%s\n", paragraph);
+    printf("%f letters\n", count_letters(paragraph));
+    printf("%f words\n", count_words(paragraph));
+    printf("%f sentences\n", count_sentences(paragraph));
     index = ((letters / words) * 100) * 0.0588 - 0.296 * ((sentences / words) * 100) - 15.8;
     if (index >= 16)
     {
@@ -29,7 +29,7 @@ int main(void)
     }
     else if (index < 1)
     {
-        printf("Before Grade 1");
+        printf("Before Grade 1\n");
     }
     else
     {
