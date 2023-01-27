@@ -32,7 +32,7 @@ int compute_score(int ascii_word)
     // TODO: Compute and return score for string
     int score = 0;
     int index = 0;
-    while (ascii_word >= 0)
+    while (ascii_word > 0)
     {
         //Use a module%100 to get the last two digits from the ascii_word
         index = ascii_word % 100 ;
