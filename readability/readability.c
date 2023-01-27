@@ -11,16 +11,10 @@ int main(void)
     // get string input from the user and print it.
 
     string paragraph = get_string("Text: ");
-    if (paragraph)
-    {
-        printf("%s\n", paragraph);
-        printf("%i letters\n", count_letters(paragraph));
-        printf("%i words\n", count_words(paragraph));
-    }
-    else
-    {
-        return 0;
-    }
+    printf("%s\n", paragraph);
+    printf("%i letters\n", count_letters(paragraph));
+    printf("%i words\n", count_words(paragraph));
+
 
 }
 
@@ -45,14 +39,13 @@ int count_words(string paragraph)
     int words = 0;
     int i = 0;
     do
-    {
-        if (isspace(paragraph[i]) || (paragraph[i+1] == '\0' &&  !isspace(paragraph[i])))
         {
-            words++;
-        }
+            if (isspace(paragraph[i]) || (paragraph[i+1] == '\0' &&  !isspace(paragraph[i])))
+            {
+                words++;
+            }
         i++;
-    }
+        }
     while (i < strlen(paragraph));
-
-    return 
+    return words;
 }
