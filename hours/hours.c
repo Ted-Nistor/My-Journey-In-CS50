@@ -29,7 +29,7 @@ int main(void)
     }
     else
     {
-        printf("hours: %.1f\n", (float) (sum / weeks));
+        printf("hours: %.1f\n", (float) sum / weeks);
     }
 
     // printf("%.1f hours\n", calc_hours(hours, weeks, output));
