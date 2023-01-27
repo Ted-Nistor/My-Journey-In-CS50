@@ -10,3 +10,12 @@ int main(void)
     printf("%s\n", paragraph);
 
 }
+
+int count_letters(string paragraph)
+{
+    int counter = 0;
+    for (int i = 0 ; i < strlen(paragraph) ; i++)
+    {
+        if (paragraph[i])
+    }
+}
