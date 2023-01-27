@@ -34,9 +34,13 @@ int count_letters(string paragraph)
 int count_words(string paragraph)
 {
     int words = 0;
-    for (int i = 0 ; i < strlen(paragraph) ; i++)
+    for (int i = 0 ; i <= strlen(paragraph) ; i++)
     {
-        if (isalpha(paragraph[i-1]) && isspace(paragraph[i]))
+        if ()
+        {
+            words++;
+        }
     }
 
+    return words;
 }
