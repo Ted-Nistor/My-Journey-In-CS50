@@ -32,8 +32,10 @@ int count_letters(string paragraph)
 int count_words(string paragraph)
 {
     int words = 0;
-    int space_ascii = 32;
-    while ()
+    for (int i = 0 ; i < strlen(paragraph) ; i++)
+    {
+        if
+    }
 
 
 }
