@@ -3,19 +3,14 @@
 #include <string.h>
 
 
-void get_ascii(string word);
 int main(void)
 {
-    get_ascii("Tomato");
-}
-
-void get_ascii(string word)
-{
-    char c;
-    // word = tolower(word);
-    for (int i = 0 ; i < strlen(word) ; i++)
+    string word = get_string("Word: ");
+    int n = strlen(word);
+    printf("the word is: %s\n", word);
+    printf("the word has %i letters\n", n);
+    for (int i = 0 ; i < strlen(word); i++)
     {
-        c = word[i];
-        printf("%d", c);
+        printf("%d, \n", word[i]);
     }
 }
