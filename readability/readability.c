@@ -37,7 +37,7 @@ int count_words(string paragraph)
     int i = 0;
     do
     {
-        if (paragraph[i] == ' ' || (paragraph[i+1] == '\0' &&  paragraph[i] != ' '))
+        if (isspace(paragraph[i]) || (paragraph[i+1] == '\0' &&  !isspace(paragraph[i])))
         {
             words++;
         }
