@@ -25,11 +25,11 @@ int main(void)
     index = ((letters / words) * 100) * 0.0588 - 0.296 * ((sentences / words) * 100) - 15.8;
     if (index >= 16)
     {
-        printf("Grade 16+");
+        printf("Grade 16+\n");
     }
     else if (index < 1)
     {
-        printf("Before grade 1");
+        printf("Before Grade 1");
     }
     else
     {
