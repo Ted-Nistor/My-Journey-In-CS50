@@ -34,9 +34,9 @@ int count_words(string paragraph)
     int words = 0;
     for (int i = 0 ; i < strlen(paragraph) ; i++)
     {
-        if (isspace(paragraph[i]))
+        if (isspace(paragraph[i]) && (paragraph[i-1] != isspace(paragraph[i]) || ) )
         {
-            
+
         }
     }
 
