@@ -58,6 +58,7 @@ int string_to_ascii (string word)
 {
     // initialize variable that will become = to string converted into ascii
     int ascii;
+    int new_word;
     // convert each letter to upper case.
     for (int i = 0 ; i < strlen(word) ; i ++)
     {
@@ -67,7 +68,7 @@ int string_to_ascii (string word)
     for (int j = 0 ; j < strlen(word); j ++)
     {
         ascii = word[j];
-        ascii += printf("%i",ascii);
+        new_word += printf("%i",ascii);
     }
     printf ("\n");
     return ascii;
