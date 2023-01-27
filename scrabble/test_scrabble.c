@@ -10,7 +10,7 @@ int main(void)
     int n = strlen(word);
     for (int i = 0 ; i < n ; i ++)
     {
-        
+        word[i] = toupper(word[i]);
     }
     printf("the word is: %s\n", word);
     printf("the word has %i letters\n", n);
