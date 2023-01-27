@@ -38,7 +38,7 @@ int string_to_ascii (string word)
     {
         word[i] = toupper(word[i]);
     }
-    // convert each uppercase letter to ascii
+    // convert each uppercase letter to ascii (they will be without space)
     for (int j = 0 ; j < strlen(word); j ++)
     {
         ascii = printf("%d", word[j]);
