@@ -22,10 +22,14 @@ int main(void)
     // TODO: Print the winner
 }
 
-int compute_score(string word)
+int compute_score(int ascii_word)
 {
     // TODO: Compute and return score for string
-
+    int score = 0;
+    while (ascii_word >= 0)
+    {
+        
+    }
 
 }
 
