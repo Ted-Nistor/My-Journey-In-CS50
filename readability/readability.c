@@ -4,6 +4,7 @@
 #include <ctype.h>
 
 int count_letters(string paragraph);
+int count_words(string paragraph);
 
 int main(void)
 {
@@ -11,6 +12,7 @@ int main(void)
     string paragraph = get_string("Text: ");
     printf("%s\n", paragraph);
     printf("%i letters\n", count_letters(paragraph));
+    printf("%i words\n", count_words(paragraph));
 }
 
 // make a letter counter by incrementing the counter if
@@ -36,9 +38,9 @@ int count_words(string paragraph)
     {
         if (isspace(paragraph[i]) && (paragraph[i-1] != isspace(paragraph[i]) || paragraph[i+1] != isspace(paragraph[i])) )
         {
-
+            words++;
         }
     }
-
+    return words;
 
 }
