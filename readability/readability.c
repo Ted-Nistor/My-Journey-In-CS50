@@ -33,7 +33,7 @@ int main(void)
     }
     else
     {
-    printf("Grade %i\n", (int)round(index));
+        printf("Grade %i\n", (int)round(index));
 
     }
 
@@ -62,15 +62,15 @@ float count_words(string paragraph)
     float words = 0;
     int i = 0;
     do
-    // (if the character is a space) or (if the next character is a '\0' and the current character is not a space),
-    // increase the words counter by 1.
+        // (if the character is a space) or (if the next character is a '\0' and the current character is not a space),
+        // increase the words counter by 1.
+    {
+        if (isspace(paragraph[i]) || (paragraph[i + 1] == '\0' &&  !isspace(paragraph[i])))
         {
-            if (isspace(paragraph[i]) || (paragraph[i+1] == '\0' &&  !isspace(paragraph[i])))
-            {
-                words++;
-            }
-        i++;
+            words++;
         }
+        i++;
+    }
     while (i < strlen(paragraph));
     return words;
 }
