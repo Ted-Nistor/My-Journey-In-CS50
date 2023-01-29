@@ -39,31 +39,32 @@ void rotate(string phrase, int key)
         {
            if (isupper(phrase[i]))
             {
-                if (code_phrase <= 90)
-                {
-                    phrase[i] += key;
-                }
-                else
-                {
-                    code_phrase %= 90;
-                    if (code_phrase > 25)
-                    {
-                        code_phrase %= 26;
-                    }
-                    phrase[i] = 65 + code_phrase;
-                }
-            }
-            else if (islower(phrase[i]))
-            {
-                    if (code_phrase <= 122 )
-                    {
-                        phrase[i] += key;
-                    }
-                    else
-                    {
-                        phrase[i] = 96 + (code_phrase % 97 - 25 );
-                    }
-            }
+                code_phrase 
+            //     if (code_phrase <= 90)
+            //     {
+            //         phrase[i] += key;
+            //     }
+            //     else
+            //     {
+            //         code_phrase %= 90;
+            //         if (code_phrase > 25)
+            //         {
+            //             code_phrase %= 26;
+            //         }
+            //         phrase[i] = 65 + code_phrase;
+            //     }
+            // }
+            // else if (islower(phrase[i]))
+            // {
+            //         if (code_phrase <= 122 )
+            //         {
+            //             phrase[i] += key;
+            //         }
+            //         else
+            //         {
+            //             phrase[i] = 96 + (code_phrase % 97 - 25 );
+            //         }
+            // }
 
         }
     }
