@@ -27,3 +27,7 @@ int main(int argc, string argv[])
 
 }
 
+void cypher(string phrase, int key)
+{
+    
+}
