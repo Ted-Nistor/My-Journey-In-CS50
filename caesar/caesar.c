@@ -31,6 +31,9 @@ void rotate(string phrase, int key)
     //loop through the letters of the phrase
     for (int i = 0 ; i < strlen(phrase) ; i++)
     {
+        // make a temp variable to store the ascii formatted
+        // letter + the assigned key (used for the rotation
+        // and assigned from  the arv[1] argument up above.
         int code_phrase = phrase[i] + key;
         if (isalpha(phrase[i]))
         {
