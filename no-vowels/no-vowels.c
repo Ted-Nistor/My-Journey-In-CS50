@@ -12,6 +12,7 @@ int main(int argc, string argv[])
 {
     if (argc == 2)
     {
+        printf("%s\n", replace(&argv[1]));
         return 0;
     }
     else
@@ -23,6 +24,7 @@ int main(int argc, string argv[])
 
 void replace(string argv[1])
 {
+    string new_word;
     for (int i = 0 ; i < strlen(argv[1]) ; i++)
     {
         if (argv[1][i] == 'A' || argv[1][i] == 'a' )
@@ -42,6 +44,7 @@ void replace(string argv[1])
             argv[1][i] = '0';
         }
     }
-    printf("%s\n", argv[1]);
-    
+    new_word = argv[1];
+    return new_word;
+
 }
