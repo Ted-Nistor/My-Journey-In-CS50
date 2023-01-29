@@ -34,14 +34,15 @@ void rotate(string phrase, int key)
         // make a temp variable to store the ascii formatted
         // letter + the assigned key (used for the rotation
         // and assigned from  the arv[1] argument up above.
-        int code_phrase;
+
         if (isalpha(phrase[i]))
         {
             printf("ciphertext: ");
            if (isupper(phrase[i]))
             {
-                code_phrase = (phrase[i] % 65 + key) % 26;
-                printf("%d",code_phrase);
+                phrase[i]= 65 + (phrase[i] % 65 + key) % 26;
+
+
             //     if (code_phrase <= 90)
             //     {
             //         phrase[i] += key;
@@ -71,4 +72,5 @@ void rotate(string phrase, int key)
         }
     }
 }
+    printf("%s", phrase);
 }
