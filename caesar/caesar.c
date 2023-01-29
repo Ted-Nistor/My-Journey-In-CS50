@@ -28,11 +28,14 @@ void cypher(string phrase, int key)
         int code_phrase = phrase[i] + key;
         if (isalpha(phrase[i]))
         {
-            if (isupper(phrase[i]) )
+           if (isupper(phrase[i]))
             {
-                
+                if (code_phrase <= 90)
+                {
+                    phrase[i] += key;
+                }
             }
-            // phrase[i] += key;
+            
         }
     }
     printf("%s\n", phrase);
