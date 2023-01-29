@@ -46,6 +46,7 @@ void to_decimal(string word)
             else
             {
                 printf(0);
+                ascii = ascii % pow(2,j);
             }
         }
     }
