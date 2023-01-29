@@ -61,7 +61,7 @@ string cipher_alphabet(string key, string plaintext)
     {
 
         cipher[i] = key[i];
-        // printf("%i, ",key[i]);
+        printf("%i, ",key[i]);
 
         for (int j = 0 ; j < strlen(plaintext) ; j++)
         {
