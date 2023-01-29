@@ -10,7 +10,7 @@ void to_decimal(string word);
 int main(void)
 {
     // TODO
-    string input = get_string("Input: \n");
+    string input = get_string("Input: ");
     to_decimal(input);
 }
 
@@ -36,4 +36,5 @@ void to_decimal(string word)
         ascii = word[i];
         printf("%i, ",ascii);
     }
+    printf("\n");
 }
