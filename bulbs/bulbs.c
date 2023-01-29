@@ -9,7 +9,8 @@ void print_bulb(int bit);
 int main(void)
 {
     // TODO
-    
+    int input = get_string("Input: \n");
+    printf("%d\n", input);
 }
 
 void print_bulb(int bit)
