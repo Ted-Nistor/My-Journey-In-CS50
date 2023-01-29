@@ -12,9 +12,9 @@ int main(int argc, string argv[])
     // don't enter an integer or if the integer argument is negative
     // exit the program with message "Usage: ./caesar key\n" and
     // return 1 as an error for the $? echo
-    if (argc != 2 || !only_digits(argv[1]) || atoi(argv[1]) < 0 )
+    if (argc != 2 || !only_digits(argv[1]) || atoi(argv[1]) < 0)
     {
-         printf("Usage: ./caesar key\n");
+        printf("Usage: ./caesar key\n");
         return 1;
     }
     else
@@ -53,9 +53,9 @@ void rotate(string phrase, int key)
                 // keep in mind to use % 65 on the letter
                 // (since we are using ascii formatted letters)
                 // and we want to get a value from 0 to 25.
-                phrase[i]= 65 + ((phrase[i] % 65 + key) % 26);
+                phrase[i] = 65 + ((phrase[i] % 65 + key) % 26);
             }
-            else if(islower(phrase[i]))
+            else if (islower(phrase[i]))
             {
                 // We do the same formula for the lower case letters
                 // but we take the range from 97 (a) to 122 (z);
@@ -78,7 +78,7 @@ bool only_digits(string s)
         }
         else
         {
-           check = 0;
+            check = 0;
         }
     }
     return check == 1 ? true : false ;
