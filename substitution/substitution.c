@@ -76,7 +76,6 @@ void cipher_alphabet(string key, string plaintext)
                 index = plaintext[i] % 97;
                 }
                 plaintext[i] = cipher[index];
-                printf("%c", plaintext[i]);
             }
 
         }
