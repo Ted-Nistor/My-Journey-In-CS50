@@ -71,6 +71,7 @@ bool only_digits(string s)
     int check = 0;
     for (int i = 0 ; i < strlen(s) ; i++)
     {
+        // loop through each character and check if it's a digit
         if (isdigit(s[i]))
         {
             check = 1;
