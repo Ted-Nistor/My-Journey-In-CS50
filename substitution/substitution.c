@@ -51,14 +51,10 @@ bool validate_string (string s)
     return check == 1 ? true : false;
 }
 
-// string cipher_text (string plaintext , string cipher)
-// {
-//     printf("ciphertext: ");
-//     return plaintext;
-// }
 
 void cipher_alphabet(string key)
 {
+    int index = 0 ;
     int cipher[26];
     printf("cipher alphabet: ");
     for (int i = 0 ; i < strlen(key) ; i++)
@@ -66,5 +62,7 @@ void cipher_alphabet(string key)
         if ()
         cipher[i] = key[i];
         printf("%i, ",key[i]);
+
+        for (int j = 0 ; )
     }
 }
