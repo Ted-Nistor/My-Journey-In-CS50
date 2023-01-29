@@ -31,45 +31,34 @@ void rotate(string phrase, int key)
     //loop through the letters of the phrase
     for (int i = 0 ; i < strlen(phrase) ; i++)
     {
-        // make a temp variable to store the ascii formatted
-        // letter + the assigned key (used for the rotation
-        // and assigned from  the arv[1] argument up above.
+        // First check if the character is alphabetical
 
         if (isalpha(phrase[i]))
         {
+            //Then check if the character is upper case or lower case
             printf("ciphertext: ");
-           if (isupper(phrase[i]))
+            if (isupper(phrase[i]))
             {
+                // Uppercase letters range from 65 (A) to 90 (Z)
+                // Use the formula ciphered text = (letter + key)% 26
+                // (since there are 26 letters in the alphabet)
+                // If we consider the letter A to start at 0
+                // and the letter Z to end at 25, then there are
+                // 26 characters in the alphabet.
+                // We always start from the letter A , so first
+                // we consider the letter as being A (65), then
+                // add the result of the formula
+                // keep in mind to use % 65 on the letter
+                // (since we are using ascii formatted letters)
+                // and we want to get a value from 0 to 25. 
                 phrase[i]= 65 + ((phrase[i] % 65 + key) % 26);
-
-
-            //     if (code_phrase <= 90)
-            //     {
-            //         phrase[i] += key;
-            //     }
-            //     else
-            //     {
-            //         code_phrase %= 90;
-            //         if (code_phrase > 25)
-            //         {
-            //             code_phrase %= 26;
-            //         }
-            //         phrase[i] = 65 + code_phrase;
-            //     }
-            // }
-            // else if (islower(phrase[i]))
-            // {
-            //         if (code_phrase <= 122 )
-            //         {
-            //             phrase[i] += key;
-            //         }
-            //         else
-            //         {
-            //             phrase[i] = 96 + (code_phrase % 97 - 25 );
-            //         }
-            // }
-
-        }
+            }
+            else if(islower(phrase[i]))
+            {
+                // We do the same formula for the lower case letters
+                // but we take the range from 97 (a) to 122 (z);
+                phrase[i] = 97 + ((phrase[i] % 97 + key) % 26);
+            }
     }
 }
     printf("%s", phrase);
