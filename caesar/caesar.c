@@ -25,11 +25,12 @@ void cypher(string phrase, int key)
 {
     for (int i = 0 ; i < strlen(phrase) ; i++)
     {
+        int remainder
         if (isalpha(phrase[i]))
         {
-            if (isupper(phrase[i]))
+            if (isupper(phrase[i]) && (phrase[i] + key) % 65 > 25)
             {
-                
+                phrase[i] = 64 +
             }
             // phrase[i] += key;
         }
