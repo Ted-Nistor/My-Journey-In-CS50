@@ -46,7 +46,12 @@ void rotate(string phrase, int key)
                 else
                 {
                     code_phrase %= 90;
-                    phrase[i] = 64 + (code_phrase % 65);
+                    if (code_phrase > 25)
+                    {
+                        code_phrase %= 26;
+                    }
+                    phrase[i] = 64 + code_phrase;
+                    printf("%c", phrase[i]);
                 }
             }
             else if (islower(phrase[i]))
