@@ -39,6 +39,7 @@ bool validate_string (string s)
     int repeated = 0;
     for (int i = 0 ; i < strlen(s) ; i++)
     {
+        toupper(s[i]);
         if (isalpha(s[i]))
         {
             check = 1;
