@@ -5,7 +5,6 @@
 #include <ctype.h>
 
 bool validate_string (string s);
-// string cipher_text (string plaintext , string cipher);
 string cipher_alphabet(string key, string plaintext);
 int main(int argc, string argv[])
 {
@@ -70,12 +69,14 @@ string cipher_alphabet(string key, string plaintext)
                 if (isupper(plaintext[j]))
                 {
                 index = plaintext[j] % 65;
+                plaintext[j] = toupper(cipher[index]);
                 }
                 else if (islower(plaintext[j]))
                 {
                 index = plaintext[j] % 97;
+                plaintext[j] = tolower(cipher[index]);
                 }
-                plaintext[j] = cipher[index];
+
             }
 
     }
