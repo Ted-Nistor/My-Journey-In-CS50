@@ -24,7 +24,8 @@ int main(int argc, string argv[])
     }
     else
     {
-        string phrase = get_string(")
+        string phrase = get_string("plaintext: ");
+        cypher(phrase, argv[1]);
         return 0;
     }
 
