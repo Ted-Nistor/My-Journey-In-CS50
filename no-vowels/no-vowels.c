@@ -7,12 +7,12 @@
 #include <stdio.h>
 #include <string.h>
 
-void replace(string argv[1]);
+string replace(string word);
 int main(int argc, string argv[])
 {
     if (argc == 2)
     {
-        printf("%s\n", replace(&argv[1]));
+        printf("%s\n", replace(argv[1]));
         return 0;
     }
     else
@@ -22,29 +22,28 @@ int main(int argc, string argv[])
     }
 }
 
-void replace(string argv[1])
+string replace(string word)
 {
-    string new_word;
-    for (int i = 0 ; i < strlen(argv[1]) ; i++)
+    for (int i = 0 ; i < strlen(word) ; i++)
     {
-        if (argv[1][i] == 'A' || argv[1][i] == 'a' )
+        if (word[i] == 'A' || word[i] == 'a' )
         {
-            argv[1][i] = '6';
+            word[i] = '6';
         }
-        else if (argv[1][i] == 'E' || argv[1][i] == 'e')
+        else if (word[i] == 'E' || word[i] == 'e')
         {
-            argv[1][i] = '3';
+            word[i] = '3';
         }
-        else if (argv[1][i] == 'I' || argv[1][i] == 'i')
+        else if (word[i] == 'I' || word[i] == 'i')
         {
-            argv[1][i] = '1';
+            word[i] = '1';
         }
-        else if (argv[1][i] == 'O' || argv[1][i] == 'o')
+        else if (word[i] == 'O' || word[i] == 'o')
         {
-            argv[1][i] = '0';
+            word[i] = '0';
         }
     }
-    new_word = argv[1];
-    return new_word;
+
+    return word;
 
 }
