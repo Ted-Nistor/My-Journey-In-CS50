@@ -10,7 +10,6 @@ int main(void)
 {
     // TODO
     int input = get_string("Input: \n");
-    printf("%d\n", input);
 }
 
 void print_bulb(int bit)
@@ -26,3 +25,5 @@ void print_bulb(int bit)
         printf("\U0001F7E1");
     }
 }
+
+int to_decimal = (string)
