@@ -34,6 +34,18 @@ void cypher(string phrase, int key)
                 {
                     phrase[i] += key;
                 }
+                else
+                {
+                    phrase[i] = 64 + key;
+                }
+            }
+            else if (islower(phrase[i]))
+            {
+                    if (code_phrase <= 122 )
+                    {
+                        phrase[i] += key;
+                    }
+                    else
             }
 
         }
