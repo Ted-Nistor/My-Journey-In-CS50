@@ -40,7 +40,20 @@ void to_decimal(string word)
         for (int j = 7 ; j >= 0 ; j --)
         {
             int bits = pow(2, j);
-            
+            if (ascii == bits)
+            {
+                printf("1");
+            }
+            else if (ascii < bits)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("1");
+                ascii %= bits;
+            }
+
         }
     }
     printf("\n");
