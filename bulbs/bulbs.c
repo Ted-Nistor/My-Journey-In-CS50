@@ -33,6 +33,7 @@ void print_bulb(int bit)
 void to_decimal(string word)
 {
     int ascii = 0;
+    int binary = 0;
     for (int i = 0 ; i < strlen(word) ; i++)
     {
         ascii = word[i];
@@ -42,18 +43,21 @@ void to_decimal(string word)
             int bits = pow(2, j);
             if (ascii == bits)
             {
-                printf("1");
+                binary = 1;
                 ascii %= bits;
             }
             else if (ascii < bits)
             {
-                printf("0");
+                // printf("0");
+                binary = 0 ;
             }
             else
             {
-                printf("1");
+                // printf("1");
+                binary = 1 ;
                 ascii %= bits;
             }
+            print_bulb(binary);
         }
     }
     printf("\n");
