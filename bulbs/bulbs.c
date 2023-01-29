@@ -7,13 +7,13 @@ const int BITS_IN_BYTE = 8;
 
 
 void print_bulb(int bit);
-void to_decimal(string word);
+void to_binary(string word);
 
 int main(void)
 {
     // TODO
     string input = get_string("Input: ");
-    to_decimal(input);
+    to_binary(input);
 }
 
 void print_bulb(int bit)
@@ -30,14 +30,13 @@ void print_bulb(int bit)
     }
 }
 
-void to_decimal(string word)
+void to_binary(string word)
 {
     int ascii = 0;
     int binary = 0;
     for (int i = 0 ; i < strlen(word) ; i++)
     {
         ascii = word[i];
-        // printf("%i, ",ascii);
         for (int j = 7 ; j >= 0 ; j --)
         {
             int bits = pow(2, j);
@@ -48,12 +47,11 @@ void to_decimal(string word)
             }
             else if (ascii < bits)
             {
-                // printf("0");
                 binary = 0 ;
             }
             else
             {
-                // printf("1");
+
                 binary = 1 ;
                 ascii %= bits;
             }
