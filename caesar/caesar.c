@@ -7,6 +7,10 @@
 void rotate(string phrase, int key);
 int main(int argc, string argv[])
 {
+    // If the you enter more than one arguments, or if you
+    // don't enter an integer or if the integer argument is negative
+    // exit the program with message "Usage: ./caesar key\n" and
+    // return 1 as an error for the $? echo
     if (argc != 2 || !atoi(argv[1]) || atoi(argv[1]) < 0 )
     {
          printf("Usage: ./caesar key\n");
@@ -24,6 +28,7 @@ int main(int argc, string argv[])
 
 void rotate(string phrase, int key)
 {
+    //loop through the letters of the phrase
     for (int i = 0 ; i < strlen(phrase) ; i++)
     {
         int code_phrase = phrase[i] + key;
