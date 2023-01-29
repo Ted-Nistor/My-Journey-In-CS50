@@ -30,6 +30,7 @@ int main(int argc, string argv[])
 void rotate(string phrase, int key)
 {
     //loop through the letters of the phrase
+    printf("ciphertext: ");
     for (int i = 0 ; i < strlen(phrase) ; i++)
     {
         // First check if the character is alphabetical
@@ -37,7 +38,7 @@ void rotate(string phrase, int key)
         if (isalpha(phrase[i]))
         {
             //Then check if the character is upper case or lower case
-            printf("ciphertext: ");
+
             if (isupper(phrase[i]))
             {
                 // Uppercase letters range from 65 (A) to 90 (Z)
