@@ -56,7 +56,7 @@ void rotate(string phrase, int key)
                     }
                     else
                     {
-                        phrase[i] = 96 + (code_phrase % 97 );
+                        phrase[i] = 96 + (code_phrase % 97 - 25 );
                     }
             }
 
