@@ -3,6 +3,7 @@
 #include <string.h>
 
 const int BITS_IN_BYTE = 8;
+const int bits[] = {1, 2, 4, 8, 16, 32, 64, 128};
 
 void print_bulb(int bit);
 void to_decimal(string word);
