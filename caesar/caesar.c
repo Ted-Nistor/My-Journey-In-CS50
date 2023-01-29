@@ -46,6 +46,9 @@ void cypher(string phrase, int key)
                         phrase[i] += key;
                     }
                     else
+                    {
+                        phrase[i] = 96 + key;
+                    }
             }
 
         }
