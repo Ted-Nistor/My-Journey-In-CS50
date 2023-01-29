@@ -59,9 +59,9 @@ string cipher_alphabet(string key, string plaintext)
     int cipher[26];
     for (int i = 0 ; i < strlen(key) ; i++)
     {
-        if ()
+
         cipher[i] = key[i];
-        printf("%i, ",key[i]);
+        // printf("%i, ",key[i]);
 
         for (int j = 0 ; j < strlen(plaintext) ; j++)
         {
