@@ -5,6 +5,7 @@
 #include <string.h>
 
 void rotate(string phrase, int key);
+bool only_digits(string s);
 int main(int argc, string argv[])
 {
     // If the you enter more than one arguments, or if you
@@ -50,7 +51,7 @@ void rotate(string phrase, int key)
                 // add the result of the formula
                 // keep in mind to use % 65 on the letter
                 // (since we are using ascii formatted letters)
-                // and we want to get a value from 0 to 25. 
+                // and we want to get a value from 0 to 25.
                 phrase[i]= 65 + ((phrase[i] % 65 + key) % 26);
             }
             else if(islower(phrase[i]))
@@ -59,7 +60,22 @@ void rotate(string phrase, int key)
                 // but we take the range from 97 (a) to 122 (z);
                 phrase[i] = 97 + ((phrase[i] % 97 + key) % 26);
             }
+        }
     }
-}
     printf("%s", phrase);
+}
+
+bool only_digits(string s)
+{
+    for (int i = 0 ; i < strlen(s) ; i++)
+    {
+        if (isdigit(s[i]))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
