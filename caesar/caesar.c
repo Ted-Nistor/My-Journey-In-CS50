@@ -37,9 +37,11 @@ void rotate(string phrase, int key)
         int code_phrase;
         if (isalpha(phrase[i]))
         {
+            printf("ciphertext: ");
            if (isupper(phrase[i]))
             {
                 code_phrase = (phrase[i] % 65 + key) % 26;
+                printf("%d",code_phrase);
             //     if (code_phrase <= 90)
             //     {
             //         phrase[i] += key;
@@ -68,5 +70,5 @@ void rotate(string phrase, int key)
 
         }
     }
-    printf("ciphertext: %c", code_phrase);
+}
 }
