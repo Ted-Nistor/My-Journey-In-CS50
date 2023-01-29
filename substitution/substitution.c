@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 bool validate_string (string s);
-string cipher_text (string plaintext , string cipher);
+void cipher_text (string plaintext , string cipher);
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -26,7 +26,7 @@ int main(int argc, string argv[])
     else
     {
         string input = get_string("plaintext: ");
-        printf("%s",cipher_text(input, argv[1]));
+        cipher_text(input,argv[1]);
         printf("\n");
         return 0;
     }
@@ -50,21 +50,24 @@ bool validate_string (string s)
     return check == 1 ? true : false;
 }
 
-string cipher_text (string plaintext , string cipher)
+void cipher_text (string plaintext , string cipher)
 {
     printf("ciphertext: ");
     for (int i = 0 ; i < strlen(plaintext) ; i++)
     {
-        if (isupper(plaintext[i]))
+        if (isalpha(plaintext[i]))
         {
-            plaintext[i] %= 65 ;
-            printf("%i ", plaintext[i]);
+            if (isupper(plaintext[i]))
+                {
+                    plaintext[i] %= 65 ;
+                    printf("%i ", plaintext[i]);
+                }
+            else if (islower(plaintext[i]))
+                {
+                    plaintext[i] %= 97;
+                    printf("%i ", plaintext[i]);
+                }
         }
-        else if (islower(plaintext[i]))
-        {
-            plaintext[i] %= 97;
-            printf("%i ", plaintext[i]);
-        }
+
     }
-    return plaintext;
 }
