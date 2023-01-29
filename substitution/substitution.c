@@ -53,6 +53,7 @@ bool validate_string (string s)
 string cipher_text (string plaintext , string cipher)
 {
     printf("ciphertext: ");
+    int cipher_text[];
     for (int i = 0 ; i < strlen(plaintext) ; i++)
     {
         if (isalpha(plaintext[i]))
@@ -67,7 +68,17 @@ string cipher_text (string plaintext , string cipher)
                     plaintext[i] %= 97;
                 }
         }
-
+        for (int j = 0 ; j < 26 ; j ++)
+        {
+            if (isupper(cipher[j]))
+            {
+                cipher_text[j] = cipher[j] % 65 ;
+            }
+            else if (islower(cipher[j]))
+            {
+                cipher_text[j] = cipher[j] % 97 ;
+            }
+        }
     }
     printf("%s",plaintext);
     return plaintext;
