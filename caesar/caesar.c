@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 
-void cypher(string phrase, int key);
+void rotate(string phrase, int key);
 int main(int argc, string argv[])
 {
     if (argc != 2 || !atoi(argv[1]) || atoi(argv[1]) < 0 )
@@ -15,14 +15,14 @@ int main(int argc, string argv[])
     else
     {
         string phrase = get_string("plaintext:  ");
-        cypher(phrase, atoi(argv[1]));
+        rotate(phrase, atoi(argv[1]));
         printf("\n");
         return 0;
     }
 
 }
 
-void cypher(string phrase, int key)
+void rotate(string phrase, int key)
 {
     for (int i = 0 ; i < strlen(phrase) ; i++)
     {
