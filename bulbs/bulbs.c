@@ -53,7 +53,6 @@ void to_decimal(string word)
                 printf("1");
                 ascii %= bits;
             }
-
         }
     }
     printf("\n");
