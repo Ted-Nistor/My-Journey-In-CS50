@@ -37,7 +37,7 @@ void to_decimal(string word)
     for (int i = 0 ; i < strlen(word) ; i++)
     {
         ascii = word[i];
-        printf("%i, ",ascii);
+        // printf("%i, ",ascii);
         for (int j = 7 ; j >= 0 ; j --)
         {
             int bits = pow(2, j);
@@ -59,6 +59,6 @@ void to_decimal(string word)
             }
             print_bulb(binary);
         }
+            printf("\n");
     }
-    printf("\n");
 }
