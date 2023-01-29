@@ -65,20 +65,21 @@ string cipher_alphabet(string key, string plaintext)
 
     for (int j = 0 ; j < strlen(plaintext) ; j++)
     {
-            if (isalpha(plaintext[i]))
+            if (isalpha(plaintext[j]))
             {
-                if (isupper(plaintext[i]))
+                if (isupper(plaintext[j]))
                 {
-                index = plaintext[i] % 65;
+                index = plaintext[j] % 65;
                 }
-                else if (islower(plaintext[i]))
+                else if (islower(plaintext[j]))
                 {
-                index = plaintext[i] % 97;
+                index = plaintext[j] % 97;
                 }
                 plaintext[j] = cipher[index];
             }
 
     }
+    return plaintext;
 }
 
 
