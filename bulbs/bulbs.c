@@ -39,14 +39,14 @@ void to_decimal(string word)
         printf("%i, ",ascii);
         for (int j = 7 ; j >= 0 ; j --)
         {
-            if ascii == pow(2, j);
+            if (ascii == pow(2, j))
             {
-                printf(1);
+                printf("1");
             }
             else
             {
-                printf(0);
-                ascii = ascii % pow(2,j);
+                printf("0");
+                ascii %= pow (2, j);
             }
         }
     }
