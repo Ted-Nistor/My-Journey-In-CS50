@@ -16,6 +16,7 @@ int main(int argc, string argv[])
     {
         string phrase = get_string("plaintext:  ");
         cypher(phrase, atoi(argv[1]));
+        printf("\n");
         return 0;
     }
 
@@ -36,7 +37,7 @@ void cypher(string phrase, int key)
                 }
                 else
                 {
-                    phrase[i] = 64 + key;
+                    phrase[i] = 64 + (code_phrase % 90);
                 }
             }
             else if (islower(phrase[i]))
@@ -47,7 +48,7 @@ void cypher(string phrase, int key)
                     }
                     else
                     {
-                        phrase[i] = 96 + key;
+                        phrase[i] = 96 + (code_phrase % 122);
                     }
             }
 
