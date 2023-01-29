@@ -53,10 +53,7 @@ bool validate_string (string s)
 string cipher_text (string plaintext , string cipher)
 {
     printf("ciphertext: ");
-    int cipher_array[26];
-    for (int i = 0 ; i < strlen(plaintext) ; i++)
-    {
-        printf("%i ",plaintext[i]);
-    }
-    return plaintext;
+    po.;
+
+
 }
