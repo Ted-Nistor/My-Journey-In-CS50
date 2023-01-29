@@ -7,19 +7,9 @@
 void cypher(string phrase, int key);
 int main(int argc, string argv[])
 {
-    if (argc != 2 )
+    if (argc != 2 || !atoi(argv[1]) || atoi(argv[1]) < 0 )
     {
-        printf("Invalid input. Must contain one argument!\n");
-        return 1;
-    }
-    else if (!atoi(argv[1]))
-    {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
-    else if (atoi(argv[1]) < 0)
-    {
-        printf("Usage: ./caesar key\n");
+         printf("Usage: ./caesar key\n");
         return 1;
     }
     else
