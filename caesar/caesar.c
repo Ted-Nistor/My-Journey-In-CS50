@@ -35,7 +35,7 @@ void cypher(string phrase, int key)
                     phrase[i] += key;
                 }
             }
-            
+
         }
     }
     printf("%s\n", phrase);
