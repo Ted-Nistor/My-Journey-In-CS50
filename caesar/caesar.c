@@ -40,7 +40,7 @@ void rotate(string phrase, int key)
             printf("ciphertext: ");
            if (isupper(phrase[i]))
             {
-                phrase[i]= 65 + (phrase[i] % 65 + key) % 26;
+                phrase[i]= 65 + ((phrase[i] % 65 + key) % 26);
 
 
             //     if (code_phrase <= 90)
