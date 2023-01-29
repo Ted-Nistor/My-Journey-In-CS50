@@ -6,7 +6,7 @@
 
 bool validate_string (string s);
 // string cipher_text (string plaintext , string cipher);
-void cipher_alphabet(string key);
+string cipher_alphabet(string key);
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -52,7 +52,7 @@ bool validate_string (string s)
 }
 
 
-void cipher_alphabet(string key)
+string cipher_alphabet(string key, string plaintext)
 {
     int index = 0 ;
     int cipher[26];
@@ -63,6 +63,22 @@ void cipher_alphabet(string key)
         cipher[i] = key[i];
         printf("%i, ",key[i]);
 
-        for (int j = 0 ; )
+        for (int j = 0 ; j < strlen(plaintext) ; j++)
+        {
+            if (isalpha(plaintext[i]))
+            {
+                if (isupper(plaintext[i]))
+                {
+                index = plaintext[i] % 65;
+                }
+                else if (islower(plaintext[i]))
+                {
+                index = plaintext[i] % 97;
+                }
+                plaintext[i] = cipher[index];
+            }
+
+        }
     }
+    return plaintext;
 }
