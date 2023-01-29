@@ -43,6 +43,7 @@ void to_decimal(string word)
             if (ascii == bits)
             {
                 printf("1");
+                ascii %= bits;
             }
             else if (ascii < bits)
             {
