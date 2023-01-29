@@ -28,9 +28,9 @@ void cypher(string phrase, int key)
         int code_phrase = phrase[i] + key;
         if (isalpha(phrase[i]))
         {
-            if (isupper(phrase[i]) && (code_phrase % 65 > 25))
+            if (isupper(phrase[i]) )
             {
-                phrase[i] = 64 + (code_phrase % 25);
+                
             }
             // phrase[i] += key;
         }
