@@ -67,24 +67,17 @@ void rotate(string phrase, int key)
 
 bool only_digits(string s)
 {
+    int check = 0;
     for (int i = 0 ; i < strlen(s) ; i++)
     {
-        int check = 0;
         if (isdigit(s[i]))
         {
-            check == 1;
+            check = 1;
         }
         else
         {
-           check == 0;
+           check = 0;
         }
     }
-    if (check == 1)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return check == 1 ? true : false ;
 }
