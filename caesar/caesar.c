@@ -14,7 +14,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        string phrase = get_string("plaintext: ");
+        string phrase = get_string("plaintext:  ");
         cypher(phrase, atoi(argv[1]));
         return 0;
     }
@@ -53,5 +53,5 @@ void cypher(string phrase, int key)
 
         }
     }
-    printf("%s\n", phrase);
+    printf("ciphertext: %s", phrase);
 }
