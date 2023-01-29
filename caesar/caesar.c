@@ -25,7 +25,7 @@ int main(int argc, string argv[])
     else
     {
         string phrase = get_string("plaintext: ");
-        cypher(phrase, argv[1]);
+        cypher(phrase, atoi(argv[1]));
         return 0;
     }
 
