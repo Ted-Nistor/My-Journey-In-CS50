@@ -10,7 +10,12 @@ int main(int argc, string argv[])
         printf("Invalid input. Must contain one argument!\n");
         return 1;
     }
-    else if ((!atoi(argv[1])) && (atoi(argv[1]) > 0))
+    else if (!atoi(argv[1]))
+    {
+        printf("Usage: ./caesar key\n");
+        return 1;
+    }
+    else if (atoi(argv[1]) < 0)
     {
         printf("Usage: ./caesar key\n");
         return 1;
