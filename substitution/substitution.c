@@ -57,7 +57,7 @@ string cipher_text (string plaintext , string cipher)
     {
         if (isupper(plaintext[i]))
         {
-            plaintext[i] %= 65;
+            plaintext[i] %= 65 ;
             printf("%i ", plaintext[i]);
         }
         else if (islower(plaintext[i]))
