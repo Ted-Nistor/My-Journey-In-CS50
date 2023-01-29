@@ -61,10 +61,10 @@ string cipher_alphabet(string key, string plaintext)
     {
 
         cipher[i] = key[i];
-        printf("%i, ",key[i]);
+    }
 
-        for (int j = 0 ; j < strlen(plaintext) ; j++)
-        {
+    for (int j = 0 ; j < strlen(plaintext) ; j++)
+    {
             if (isalpha(plaintext[i]))
             {
                 if (isupper(plaintext[i]))
@@ -78,7 +78,7 @@ string cipher_alphabet(string key, string plaintext)
                 plaintext[j] = cipher[index];
             }
 
-        }
     }
-    return plaintext;
 }
+
+
