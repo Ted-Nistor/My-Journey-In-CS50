@@ -1,26 +1,58 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
-#include <ctype.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-int main(int argc, int arvg[])
+bool validate_string (string s);
+string cipher_text (string plaintext , string cipher);
+int main(int argc, string argv[])
 {
-
-}
-
-bool validate_key(string s)
-{
-    if (strlen(s) < 26)
+    if (argc != 2)
     {
-        printf("Key must contain 26 characters.\n");
+        printf("Usage: ./substitution key\n");
         return 1;
     }
+    // else if (atoi(argv[1]) != 26)
+    // {
+    //     printf("Key must contain 26 characters.\n");
+    //     return 1;
+    // }
+    else if (!validate_string(argv[1]))
+    {
+        printf("Usage: ./substitution key\n");
+        return 1;
+    }
+    else
+    {
+        string input = get_string("plaintext: ");
+        printf("%s",cipher_text(input, argv[1]));
+        printf("\n");
+        return 0;
+    }
+}
+
+bool validate_string (string s)
+{
+    int check = 0 ;
+    int repeated = 0;
     for (int i = 0 ; i < strlen(s) ; i++)
     {
-        if(!isalpha(s))
+        if (isalpha(s[i]))
         {
-            prinf("Usage: ./substitution key\n");
+            check = 1;
+        }
+        else
+        {
+            check = 0;
         }
     }
+    return check == 1 ? true : false;
+}
+
+string cipher_text (string plaintext , string cipher)
+{
+    printf("ciphertext: ");
+    int cipher_array[26];
+    return plaintext;
 }
