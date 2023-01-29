@@ -7,7 +7,7 @@ int main(int argc, string argv[])
 {
     if (argc != 2 )
     {
-        printf("Invalid input. Try again!\n");
+        printf("Invalid input. Must contain one argument!\n");
         return 1;
     }
     else if (!atoi(argv[1]))
