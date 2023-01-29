@@ -10,7 +10,7 @@ int main(int argc, string argv[])
         printf("Invalid input. Try again!\n");
         return 1;
     }
-    else if (!isdigit(atoi(argv[1])))
+    else if (!atoi(argv[1]))
     {
         printf("Usage: ./caesar key\n");
         return 1;
