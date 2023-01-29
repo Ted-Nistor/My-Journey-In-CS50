@@ -34,7 +34,7 @@ void rotate(string phrase, int key)
         // make a temp variable to store the ascii formatted
         // letter + the assigned key (used for the rotation
         // and assigned from  the arv[1] argument up above.
-        int code_phrase = phrase[i] + key;
+        int code_phrase
         if (isalpha(phrase[i]))
         {
            if (isupper(phrase[i]))
