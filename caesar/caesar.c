@@ -12,7 +12,7 @@ int main(int argc, string argv[])
     // don't enter an integer or if the integer argument is negative
     // exit the program with message "Usage: ./caesar key\n" and
     // return 1 as an error for the $? echo
-    if (argc != 2 || !atoi(argv[1]) || atoi(argv[1]) < 0 )
+    if (argc != 2 || !only_digits(argv[1]) || atoi(argv[1]) < 0 )
     {
          printf("Usage: ./caesar key\n");
         return 1;
@@ -69,13 +69,22 @@ bool only_digits(string s)
 {
     for (int i = 0 ; i < strlen(s) ; i++)
     {
+        int check = 0;
         if (isdigit(s[i]))
         {
-            return true;
+            check == 1;
         }
         else
         {
-            return false;
+           check == 0;
         }
+    }
+    if (check == 1)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
