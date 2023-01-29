@@ -5,7 +5,8 @@
 #include <ctype.h>
 
 bool validate_string (string s);
-string cipher_text (string plaintext , string cipher);
+// string cipher_text (string plaintext , string cipher);
+void cipher_alphabet(string key);
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -26,7 +27,7 @@ int main(int argc, string argv[])
     else
     {
         string input = get_string("plaintext: ");
-        cipher_text(input,argv[1]);
+        cipher_alphabet(argv[1]);
         printf("\n");
         return 0;
     }
@@ -50,8 +51,20 @@ bool validate_string (string s)
     return check == 1 ? true : false;
 }
 
-string cipher_text (string plaintext , string cipher)
+// string cipher_text (string plaintext , string cipher)
+// {
+//     printf("ciphertext: ");
+//     return plaintext;
+// }
+
+void cipher_alphabet(string key)
 {
-    printf("ciphertext: ");
-    return plaintext;
+    int cipher[26];
+    printf("cipher alphabet: ");
+    for (int i = 0 ; i < strlen(key) ; i++)
+    {
+        if ()
+        cipher[i] = key[i];
+        printf("%i, ",key[i]);
+    }
 }
