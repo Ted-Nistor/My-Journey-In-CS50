@@ -27,7 +27,11 @@ void cypher(string phrase, int key)
     {
         if (isalpha(phrase[i]))
         {
-            phrase[i] += key;
+            if (isupper(phrase[i]))
+            {
+                
+            }
+            // phrase[i] += key;
         }
     }
     printf("%s\n", phrase);
