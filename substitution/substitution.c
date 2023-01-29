@@ -54,5 +54,9 @@ string cipher_text (string plaintext , string cipher)
 {
     printf("ciphertext: ");
     int cipher_array[26];
-    return plaintext;
+    for (int i = 0 ; i < 26 ; i++)
+    {
+        cipher_array[i] = cipher[i];
+    }
+    return cipher;
 }
