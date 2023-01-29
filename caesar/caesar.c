@@ -45,8 +45,8 @@ void rotate(string phrase, int key)
                 }
                 else
                 {
-                    code_phrase %= 
-                    phrase[i] = 64 + (code_phrase % 65 - 25);
+                    code_phrase %= 90;
+                    phrase[i] = 64 + (code_phrase % 65);
                 }
             }
             else if (islower(phrase[i]))
