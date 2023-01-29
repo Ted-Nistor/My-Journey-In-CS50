@@ -5,11 +5,13 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
+void to_decimal(string word);
 
 int main(void)
 {
     // TODO
-    int input = get_string("Input: \n");
+    string input = get_string("Input: \n");
+    to_decimal(input);
 }
 
 void print_bulb(int bit)
@@ -26,4 +28,12 @@ void print_bulb(int bit)
     }
 }
 
-int to_decimal = (string)
+void to_decimal(string word)
+{
+    int ascii = 0;
+    for (int i = 0 ; i < strlen(word) ; i++)
+    {
+        ascii = word[i];
+        printf("%i, ",ascii);
+    }
+}
