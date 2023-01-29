@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 const int BITS_IN_BYTE = 8;
 
@@ -36,6 +37,17 @@ void to_decimal(string word)
     {
         ascii = word[i];
         printf("%i, ",ascii);
+        for (int j = 7 ; j >= 0 ; j --)
+        {
+            if ascii == pow(2, j);
+            {
+                printf(1);
+            }
+            else
+            {
+                printf(0);
+            }
+        }
     }
     printf("\n");
 }
