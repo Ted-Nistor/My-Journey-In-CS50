@@ -26,7 +26,7 @@ string replace(string word)
 {
     for (int i = 0 ; i < strlen(word) ; i++)
     {
-        if (word[i] == 'A' || word[i] == 'a' )
+        if (word[i] == 'A' || word[i] == 'a')
         {
             word[i] = '6';
         }
