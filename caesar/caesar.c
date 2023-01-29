@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
-int lower[] = {}
+
 int main(int argc, string argv[])
 {
     if (argc != 2 )
@@ -30,5 +31,8 @@ int main(int argc, string argv[])
 
 void cypher(string phrase, int key)
 {
+    for (int i = 0 ; i < strlen(phrase) ; i++)
+    {
 
+    }
 }
