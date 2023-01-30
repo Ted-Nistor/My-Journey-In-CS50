@@ -41,6 +41,7 @@ bool validate_string(string s)
         {
             printf("Usage: ./substitution key must contain only alphabetical characters\n");
             check = 0;
+            break;
         }
         index = s[i];
         for (int j = 1 ; j < strlen(s) ; j++)
@@ -51,6 +52,7 @@ bool validate_string(string s)
         {
             check = 0;
             printf("Usage: ./substitution key must only contain non-repeating characters\n");
+            break;
         }
     }
     return check == 1 ? true : false;
