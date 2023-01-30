@@ -91,7 +91,7 @@ int main(int argc, string argv[])
         // set all elements of status array initially to 0, aka WRONG
         // TODO #4
         int j = 0;
-        while (j < wordsize)
+        while (j  < wordsize)
         {
             status[j] = 0;
             j++;
