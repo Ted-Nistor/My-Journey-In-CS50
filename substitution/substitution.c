@@ -52,17 +52,28 @@ bool validate_string(string s)
             for (int j = 1 ; j < strlen(s) ; j++)
             {
                 repeated = s[j];
+                if (index == repeated)
+                {
+                    check = 0;
+                    printf("Usage: ./substitution key should not have repeating characters\n");
+                }
             }
-            
+            if (!isalpha(s[i]))
+            {
+                check = 0 ;
+                printf("Usage: ./substitution key should be alphabetical onlu\n");
+            }
         }
-    }
-    else
-    {
-        printf("Key must contain 26 characters.\n");
-        check = 0;
-    }
-
-    return check == 1 ? true : false;
+        if (strlen(s) != 26)
+        {
+            check = 0;
+            printf("Usage: ./substitution key should have 26 characters\n");
+        }
+        else
+        {
+            check = 1;
+        }
+         return check == 1 ? true : false;
 }
 
 
