@@ -29,7 +29,7 @@ int main(void)
     // for the strings example
     for (int i = 0 ; i < 7 ; i ++)
     {
-        if (strcmp(string[i], s) == 0)
+        if (strcmp(strings[i], s) == 0)
         {
             printf("Found\n");
             return 0;
