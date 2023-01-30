@@ -35,7 +35,7 @@ int main(int argc, string argv[])
     }
 
     int wordsize = 0;
-    int size = atoi(strlen(argv[1]));
+    int size = atoi(argv[1]);
 
     // ensure argv[1] is either 5, 6, 7, or 8 and store that value in wordsize instead
     // TODO #2
@@ -45,7 +45,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf ("The length of the word can only be either 5,6,7 or 8 characters!");
+        printf ("The length of the word can only be either 5,6,7 or 8 characters!\n");
         return 1;
     }
 
