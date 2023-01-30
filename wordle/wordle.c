@@ -91,9 +91,10 @@ int main(int argc, string argv[])
         // set all elements of status array initially to 0, aka WRONG
         // TODO #4
         int j = 0;
+        int initial_score = 0;
         while (j  < wordsize)
         {
-            status[j] = 0;
+            status[j] = initial_score;
             j++;
             printf("%i ", status[j]);
         }
