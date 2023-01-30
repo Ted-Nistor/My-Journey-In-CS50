@@ -27,7 +27,7 @@ int main(int argc, string argv[])
 
 bool validate_string(string s)
 {
-    int check = 0 ;
+    int check = 1 ;
     int repeated = 0;
     int index = 0;
     if (strlen(s) != 26)
