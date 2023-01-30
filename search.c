@@ -14,7 +14,7 @@ int main(void)
     // ... and so on --- same thing
 
     // int n = get_int("Number: ");
-    string s = get_string("String: ")l
+    string s = get_string("String: ");
     //linear search
     // for (int i = 0 ; i < 7 ; i++)
     // {
