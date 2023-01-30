@@ -26,7 +26,7 @@ void print_word(string guess, int wordsize, int status[]);
 
 int main(int argc, string argv[])
 {
-    printf(GREEN"This is WORDLE50"RESET"\n");
+    
     // ensure proper usage
     // TODO #1
     if (argc != 2)
