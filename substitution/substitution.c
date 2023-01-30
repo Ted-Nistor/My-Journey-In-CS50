@@ -43,16 +43,14 @@ bool validate_string(string s)
             check = 0;
             break;
         }
-        index = s[i];
         for (int j = i + 1 ; j < strlen(s) ; j++)
         {
-            repeated = s[j];
-        }
-        if (index == repeated)
-        {
+           if (s[i] == s[j])
+           {
+            printf("Usage: ./substitution key must not contain repeating characters\n");
             check = 0;
-            printf("Usage: ./substitution key must only contain non-repeating characters\n");
             break;
+           }
         }
     }
     return check == 1 ? true : false;
