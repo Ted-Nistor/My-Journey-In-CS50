@@ -62,19 +62,28 @@ bool validate_string(string s)
 //Function to conver the string to cipher text
 string cipher_text(string key, string plaintext)
 {
-    // Initialize a 26 elements array for the cipher
+    // Initialize a 26 elements array for the cipher alphabet
     int index = 0 ;
     int cipher[26];
+    // Loop through each letter of the input key and assign in
+    // in that order to the cipher array alphabet. This becomes
+    // the new alphabet
     for (int i = 0 ; i < strlen(key) ; i++)
     {
 
         cipher[i] = key[i];
     }
-
+    //Loop through each letter of the passed string
     for (int j = 0 ; j < strlen(plaintext) ; j++)
     {
+        // Check if it's alphabetical
         if (isalpha(plaintext[j]))
         {
+            // If it's upper case , index becomes equal to
+            // the remainder of that letter(converted to ascii format) % 65 (because
+            // the uppercase alphabet ranges from 65 to 90)
+            // You'll get a number ranging from 0, to 25, which is perfect
+            // because that's exactly how you could use it as an index for the alphabet.
             if (isupper(plaintext[j]))
             {
                 index = plaintext[j] % 65;
@@ -82,6 +91,8 @@ string cipher_text(string key, string plaintext)
             }
             else if (islower(plaintext[j]))
             {
+                // do the same for lower case, but use % 97 (since the lower case alphabet
+                // range from 97 (a) to 122 (z))
                 index = plaintext[j] % 97;
                 plaintext[j] = tolower(cipher[index]);
             }
