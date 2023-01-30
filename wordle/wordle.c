@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <ctype.h>
 
 // each of our text files contains 1000 words
 #define LISTSIZE 1000
@@ -34,9 +35,19 @@ int main(int argc, string argv[])
     }
 
     int wordsize = 0;
+    int size = atoi(strlen(argv[1]));
 
     // ensure argv[1] is either 5, 6, 7, or 8 and store that value in wordsize instead
     // TODO #2
+    if (size > 4 && size < 9)
+    {
+        wordsize = size;
+    }
+    else
+    {
+        printf ("The length of the word can only be either 5,6,7 or 8 characters!");
+        return 1;
+    }
 
     // open correct file, each file has exactly LISTSIZE words
     char wl_filename[6];
