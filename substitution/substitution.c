@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-bool validate_string (string s);
+bool validate_string(string s);
 string cipher_alphabet(string key, string plaintext);
 int main(int argc, string argv[])
 {
@@ -19,13 +19,13 @@ int main(int argc, string argv[])
     }
     string input = get_string("plaintext: ");
     printf("ciphertext: ");
-    printf("%s",cipher_alphabet(argv[1], input));
+    printf("%s", cipher_alphabet(argv[1], input));
     printf("\n");
     return 0;
 }
 
 
-bool validate_string (string s)
+bool validate_string(string s)
 {
     int check = 0 ;
     int repeated = 0;
@@ -36,16 +36,17 @@ bool validate_string (string s)
             s[i] = toupper(s[i]);
             if (isalpha(s[i]))
             {
-            check = 1;
+                check = 1;
             }
             else
             {
-            check = 0;
-            printf("Usage: ./substitution key\n");
+                check = 0;
+                printf("Usage: ./substitution key\n");
             }
         }
     }
-    else {
+    else
+    {
         printf("Key must contain 26 characters.\n");
         check = 0;
     }
