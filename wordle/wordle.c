@@ -122,7 +122,7 @@ string get_guess(int wordsize)
     // TODO #3
     do
     {
-        guess = get_string("Guess the word!: \n");
+        guess = get_string("Guess the word!: ");
     }
     while (strlen(guess) != wordsize);
 
