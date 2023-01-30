@@ -26,8 +26,9 @@ int main (void)
     {
         // first example
         // if (strcmp(names[i], name) == 0)
+        if(strcmp(people[i].name, name) == 0)
         {
-            printf("Found %s\n", numbers[1]);
+            printf("Found %s\n", people[i].number);
             return 0;
         }
     }
