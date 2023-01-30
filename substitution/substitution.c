@@ -13,42 +13,43 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    // else if (atoi(argv[1]) != 26)
-    // {
-    //     printf("Key must contain 26 characters.\n");
-    //     return 1;
-    // }
-    else if (!validate_string(argv[1]))
+    if (!validate_string(argv[1]))
     {
-        printf("Usage: ./substitution key\n");
         return 1;
     }
-    else
-    {
-        string input = get_string("plaintext: ");
-        printf("ciphertext: ");
-        printf("%s",cipher_alphabet(argv[1], input));
-        printf("\n");
-        return 0;
-    }
+    string input = get_string("plaintext: ");
+    printf("ciphertext: ");
+    printf("%s",cipher_alphabet(argv[1], input));
+    printf("\n");
+    return 0;
 }
+
 
 bool validate_string (string s)
 {
     int check = 0 ;
     int repeated = 0;
-    for (int i = 0 ; i < strlen(s) ; i++)
+    if (strlen(s) == 26)
     {
-        toupper(s[i]);
-        if (isalpha(s[i]))
+        for (int i = 0 ; i < strlen(s) ; i++)
         {
+            s[i] = toupper(s[i]);
+            if (isalpha(s[i]))
+            {
             check = 1;
-        }
-        else
-        {
+            }
+            else
+            {
             check = 0;
+            printf("Usage: ./substitution key\n");
+            }
         }
     }
+    else {
+        printf("Key must contain 26 characters.\n");
+        check = 0;
+    }
+
     return check == 1 ? true : false;
 }
 
