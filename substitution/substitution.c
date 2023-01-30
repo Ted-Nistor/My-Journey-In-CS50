@@ -30,50 +30,30 @@ bool validate_string(string s)
     int check = 0 ;
     int repeated = 0;
     int index = 0;
-    if (strlen(s) == 26)
+    if (strlen(s) != 26)
     {
-        // for (int i = 0 ; i < strlen(s) ; i++)
-        // {
-        //     s[i] = toupper(s[i]);
-        //     if (isalpha(s[i]))
-        //     {
-        //         check = 1;
-        //     }
-        //     else
-        //     {
-        //         check = 0;
-        //         printf("Usage: ./substitution key\n");
-        //     }
-        // }
-        for (int i = 0 ; i < strlen(s) ; i++)
+        check = 0;
+        printf("Usage: ./substitution key must containt 26 characters\n");
+    }
+    for (int i = 0; i < strlen(s) ; i++)
+    {
+        if (!isalpha(s[i]))
         {
-            s[i] = toupper(s[i]);
-            index = s[i];
-            for (int j = 1 ; j < strlen(s) ; j++)
-            {
-                repeated = s[j];
-                if (index == repeated)
-                {
-                    check = 0;
-                    printf("Usage: ./substitution key should not have repeating characters\n");
-                }
-            }
-            if (!isalpha(s[i]))
-            {
-                check = 0 ;
-                printf("Usage: ./substitution key should be alphabetical onlu\n");
-            }
+            printf("Usage: ./substitution key must contain only alphabetical characters\n");
+            check = 0;
         }
-        if (strlen(s) != 26)
+        index = s[i];
+        for (int j = 1 ; j < strlen(s) ; j++)
+        {
+            repeated = s[j];
+        }
+        if (index == repeated)
         {
             check = 0;
-            printf("Usage: ./substitution key should have 26 characters\n");
+            printf("Usage: ./substitution key must only contain non-repeating characters\n");
         }
-        else
-        {
-            check = 1;
-        }
-         return check == 1 ? true : false;
+    }
+    return check == 1 ? true : false;
 }
 
 
