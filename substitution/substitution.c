@@ -31,19 +31,19 @@ bool validate_string(string s)
     int repeated = 0;
     if (strlen(s) == 26)
     {
-        for (int i = 0 ; i < strlen(s) ; i++)
-        {
-            s[i] = toupper(s[i]);
-            if (isalpha(s[i]))
-            {
-                check = 1;
-            }
-            else
-            {
-                check = 0;
-                printf("Usage: ./substitution key\n");
-            }
-        }
+        // for (int i = 0 ; i < strlen(s) ; i++)
+        // {
+        //     s[i] = toupper(s[i]);
+        //     if (isalpha(s[i]))
+        //     {
+        //         check = 1;
+        //     }
+        //     else
+        //     {
+        //         check = 0;
+        //         printf("Usage: ./substitution key\n");
+        //     }
+        // }
     }
     else
     {
