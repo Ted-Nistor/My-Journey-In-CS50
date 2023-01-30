@@ -46,7 +46,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf ("The length of the word can only be either 5,6,7 or 8 characters!\n");
+        printf("The length of the word can only be either 5,6,7 or 8 characters!\n");
         return 1;
     }
 
@@ -151,17 +151,19 @@ int check_word(string guess, int wordsize, int status[], string choice)
     for (int i = 0 ; i < strlen(guess) ; i++)
     {
         for (int j = 0 ; j < strlen(choice) ; j++)
-        if (guess[i] == choice[j] && i == j)
         {
-            score += EXACT;
-            status[i] = EXACT;
-            break;
-        }
-        else if (guess[i] == choice[j])
-        {
-            score += CLOSE;
-            status[i] = CLOSE;
+            if (guess[i] == choice[j] && i == j)
+            {
+                score += EXACT;
+                status[i] = EXACT;
+                break;
+            }
+            else if (guess[i] == choice[j])
+            {
+                score += CLOSE;
+                status[i] = CLOSE;
 
+            }
         }
     }
 
