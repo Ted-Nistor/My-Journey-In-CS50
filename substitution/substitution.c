@@ -44,7 +44,7 @@ bool validate_string(string s)
             break;
         }
         index = s[i];
-        for (int j = 1 ; j < strlen(s) ; j++)
+        for (int j = i + 1 ; j < strlen(s) ; j++)
         {
             repeated = s[j];
         }
