@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -28,7 +29,7 @@ int main(void)
     // for the strings example
     for (int i = 0 ; i < 7 ; i ++)
     {
-        if (strings[i] == s)
+        if (strcmp(string[i], s) == 0)
         {
             printf("Found\n");
             return 0;
@@ -37,3 +38,6 @@ int main(void)
         return 1;
     }
 }
+
+// strcmp takes to string inputs and compares them, then
+// 0 if the two are the same.
