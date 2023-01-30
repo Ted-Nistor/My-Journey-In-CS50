@@ -15,7 +15,7 @@ int main (void)
     people[0].name = "Carter";
     people[0].number = "+1-617-495-100";
     people[1].name = "David";
-    people[1].number = 
+    people[1].number = "+1-949-250-2750";
     // first example
     // string names[] = {"Carter", "David"};
     // string numbers[]= {"+1-617-495-1000", "+1-949-468-2750"};
@@ -24,7 +24,8 @@ int main (void)
     string name = get_string("Name: ");
     for (int i = 0 ; i < 2 ; i++)
     {
-        if (strcmp(names[i], name) == 0)
+        // first example
+        // if (strcmp(names[i], name) == 0)
         {
             printf("Found %s\n", numbers[1]);
             return 0;
