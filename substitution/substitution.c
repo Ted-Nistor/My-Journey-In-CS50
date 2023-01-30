@@ -29,6 +29,7 @@ bool validate_string(string s)
 {
     int check = 0 ;
     int repeated = 0;
+    int index = 0;
     if (strlen(s) == 26)
     {
         // for (int i = 0 ; i < strlen(s) ; i++)
@@ -44,6 +45,16 @@ bool validate_string(string s)
         //         printf("Usage: ./substitution key\n");
         //     }
         // }
+        for (int i = 0 ; i < strlen(s) ; i++)
+        {
+            s[i] = toupper(s[i]);
+            index = s[i];
+            for (int j = 1 ; j < strlen(s) ; j++)
+            {
+                repeated = s[j];
+            }
+            
+        }
     }
     else
     {
