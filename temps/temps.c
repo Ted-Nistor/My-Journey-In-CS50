@@ -64,15 +64,22 @@ void sort_cities(void)
 {
     // Add your code here
     int counter = -1;
-    int s;
+    string s;
+    int j;
     while (counter != 0)
     {
         counter = 0;
-        for (int i = 0 ; i < 10 ; i++)
+        for (int i = 0 ; i < NUM_CITIES - 1 ; i++)
         {
             if (temps[i].temp < temps[i + 1].temp)
             {
                 counter++;
+                j = temps[i].temp;
+                temps[i].temp = temps[i + 1].temp;
+                temps[i + 1].temp = j;
+                s = temps[i].city;
+                temps[i].city = temps[i + 1].city;
+                temps[i + 1].city = s;
             }
         }
     }
