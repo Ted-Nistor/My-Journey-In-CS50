@@ -64,6 +64,7 @@ void sort_cities(void)
 {
     // Add your code here
     int counter = -1;
+    int j;
     for (int i = 0 ; i < NUM_CITIES -1 ; i++)
     {
         if (counter != 0)
@@ -71,7 +72,11 @@ void sort_cities(void)
             counter = 0;
             if (temps[i].temp <= temps[i + 1].temp)
             {
-                
+                counter++;
+                j = temps[i].temp;
+                temps[i].temp = temps[i + 1].temp;
+                temps[i + 1].temp = j;
+
             }
         }
     }
