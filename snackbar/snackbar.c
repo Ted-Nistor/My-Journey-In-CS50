@@ -88,7 +88,10 @@ float get_cost(string item)
 {
     for (int i = 0 ; i < NUM_ITEMS ; i++)
     {
-        if (strcmp())
+        if (strcmp(menu[i].item, item) == 0)
+        {
+            return menu[i].price;
+        }
     }
     return 0.0;
 }
