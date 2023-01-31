@@ -11,10 +11,14 @@ int main(void)
 
 void draw(int n)
 {
-   draw(n - 1);
-   for (int i = 0 ; i < n ; i++)
-   {
+    if (n <= 0)
+    {
+        return;
+    }
+    draw(n - 1);
+    for (int i = 0 ; i < n ; i++)
+    {
         printf("#");
-   }
-   printf("\n");
+    }
+    printf("\n");
 }
