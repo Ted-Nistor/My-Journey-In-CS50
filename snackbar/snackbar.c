@@ -93,6 +93,6 @@ float get_cost(string item)
             return menu[i].price;
         }
     }
-    printf("Not on the menu!");
+    printf("Not on the menu!\n");
     return 0.0;
 }
