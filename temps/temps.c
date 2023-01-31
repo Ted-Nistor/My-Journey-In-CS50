@@ -68,7 +68,11 @@ void sort_cities(void)
     while (counter != 0)
     {
         counter = 0;
-        if (temps[i].temp)
+        if (temps[i].temp < temps[i + 1].temp)
+        {
+            counter++;
+            
+        }
     }
 
 }
