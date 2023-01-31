@@ -3,9 +3,11 @@ sort1 uses: TODO
 How do you know?: TODO
 
 sort2 uses: TODO
-
+Merge Sort
 How do you know?: TODO
-
+The running time is relatively the same with all the tests,
+and it's still the fastest out of the three of them.
+It looks like it runs on O(n log n) time complexity.
 sort3 uses: TODO
 
 How do you know?: TODO
