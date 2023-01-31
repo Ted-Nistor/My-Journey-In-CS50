@@ -1,4 +1,4 @@
-sort1 uses: TBubble Sort
+sort1 uses: Bubble Sort
 
 How do you know?:
 The overall running time is slower than sort2, but when the list is sorted,
@@ -12,7 +12,7 @@ and it's still the fastest out of the three of them.
 It looks like it runs on O(n log n) time complexity.
 sort3 uses: Selection Sort
 
-How do you know?: 
+How do you know?:
 This is the slowest time, even when the list is sorted. So,
 the worst case and the best case scenarios are the same, meanning
 it could have a time complexity of Theta(n^2).
