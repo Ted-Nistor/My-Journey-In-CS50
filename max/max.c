@@ -28,14 +28,21 @@ int main(void)
 int max(int array[], int n)
 {
     int max;
-    for (int i = 0 ; i < n - 1 ; i++)
+    int counter = -1;
+    while (counter != 0)
     {
-        max = array[i];
-        if (max < array[i])
+        counter = 0;
+        for (int i = 0 ; i < n ; i++)
         {
-            max = array[i];
+            if (array[i] > array[i + 1])
+            {
+                counter++;
+                max = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = max;
+            }
         }
-
     }
+
     return max;
 }
