@@ -26,6 +26,6 @@ int main(void)
 int convert(string input)
 {
     // TODO
-    int a = strlen(input) - 1;
-    return a;
+    int i = strlen(input) - 1;
+    return input[i];
 }
