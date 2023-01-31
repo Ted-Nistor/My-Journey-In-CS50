@@ -23,7 +23,7 @@
 
 // Number of menu items
 // Adjust this value (10) to number of items input below
-#define NUM_ITEMS 10
+#define NUM_ITEMS 2
 
 // Menu itmes have item name and price
 typedef struct
