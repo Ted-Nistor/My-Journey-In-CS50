@@ -27,5 +27,6 @@ int convert(string input)
 {
     // TODO
    int i = strlen(input) - 1;
-   return (input[i] - 48);
+   int char = input[i] - 48;
+   
 }
