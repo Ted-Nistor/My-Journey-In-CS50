@@ -63,5 +63,12 @@ int main(void)
 void sort_cities(void)
 {
     // Add your code here
-    
+    int counter = -1;
+    int i = 0;
+    while (counter != 0)
+    {
+        counter = 0;
+        if (temps[i].temp)
+    }
+
 }
