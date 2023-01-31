@@ -27,6 +27,8 @@ int main(void)
 // TODO: return the max value
 int max(int array[], int n)
 {
+    //bubble sort with a counter and a temporary variable to
+    // store the values when swapped.
     int temp;
     int counter = -1;
     while (counter != 0)
@@ -43,5 +45,5 @@ int max(int array[], int n)
             }
         }
     }
-    return array[n-1];
+    return array[n - 1];
 }
