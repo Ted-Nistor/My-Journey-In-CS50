@@ -86,13 +86,16 @@ void sort_cities(void)
     // }
     for (int i = 0 ; i < NUM_CITIES ; i++)
     {
-        for (int j = 1 ; j < NUM_CITIES ; j++)
+        for (int j = 0 ; j < NUM_CITIES ; j++)
         {
-            if (temps[i].temp < temps[j].temp)
+            if (temps[i].temp > temps[j].temp)
             {
                 a = temps[i].temp;
                 temps[i].temp = temps[j].temp;
                 temps[j].temp = a;
+                s = temps[i].city;
+                temps[i].city = temps[j].city;
+                temps[j].city = s;
             }
         }
     }
