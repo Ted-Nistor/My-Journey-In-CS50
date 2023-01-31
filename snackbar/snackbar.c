@@ -74,8 +74,12 @@ int main(void)
 // Add at least the first for items to the menu array
 void add_items(void)
 {
-    menu[0].item = "Burger";
-    menu[0].price = 9.5;
+
+    for (int i = 0 ; i < NUM_ITEMS ; i++)
+    {
+        menu[i].item = get_string("Item %i\n", i+1);
+        menu[i].price = get_float("Price %i\n", i+1);
+    }
     return;
 }
 
