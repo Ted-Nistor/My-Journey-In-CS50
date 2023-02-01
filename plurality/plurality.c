@@ -85,7 +85,7 @@ void print_winner(void)
     string winner;
     for (int i = 0; i < candidate_count; i++)
     {
-        if ( candidates[i].votes > candidates[i + 1].votes)
+        if ( candidates[i].votes >= candidates[i + 1].votes)
         {
             votes = candidates[i].votes;
             winner = candidates[i].name;
