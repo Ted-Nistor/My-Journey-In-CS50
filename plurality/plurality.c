@@ -87,6 +87,7 @@ void print_winner(void)
         if (highest_votes < candidates[i + 1].votes)
         {
             highest_votes = candidates[i + 1].votes;
+            
         }
 
         printf("Candidate: %s Votes: %i\n", candidates[i].name , highest_votes);
