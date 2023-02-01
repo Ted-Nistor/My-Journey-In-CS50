@@ -108,6 +108,7 @@ void print_winner(void)
     {
         printf("Candidate: %s Votes: %i\n", candidates[j].name, candidates[j].votes);
     }
+    printf("%s\n", candidates[n].name);
 
 
     return;
