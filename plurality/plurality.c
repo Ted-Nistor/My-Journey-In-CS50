@@ -107,7 +107,6 @@ void print_winner(void)
     do
     {
         printf("%s\n", candidates[n].name);
-        n--;
     }
     while (highest_votes == candidates[n].votes);
 
