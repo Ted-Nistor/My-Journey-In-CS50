@@ -98,10 +98,11 @@ void print_winner(void)
                 candidates[i + 1].votes = temp;
                 s = candidates[i].name;
                 candidates[i].name = candidates[i + 1].name;
-                
+                candidates[i + 1].name = s;
             }
         }
 
     }
+    
     return;
 }
