@@ -102,9 +102,12 @@ void print_winner(void)
     //     }
     // }
     int i = 0;
-    while ()
+    while (i < candidate_count)
     {
-        printf("%s\n", candidates[i].name);
+        if (candidates[i].votes > candidates[i + 1].votes)
+        {
+            printf("%s\n", candidates[i].name);
+        }
         i++;
     }
     return;
