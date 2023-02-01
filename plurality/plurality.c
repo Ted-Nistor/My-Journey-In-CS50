@@ -100,14 +100,9 @@ void print_winner(void)
                 candidates[i].name = candidates[i + 1].name;
                 candidates[i + 1].name = s;
             }
+        printf ("Candidate %s Votes: %i\n", candidates[i].name, candidates[i].votes);
         }
 
-    }
-    n--;
-    while (candidates[n].votes != candidates[n-1].votes && n > 0)
-    {
-        printf("%s\n", candidates[n].name);
-        n-- ;
     }
     return;
 }
