@@ -85,8 +85,8 @@ void print_winner(void)
         if (&vote)
         {
             candidates[i].votes++;
-            printf("Candidate : %s Votes : %i\n", candidates[i].name, candidates[i].votes);
         }
+    printf("Candidate : %s Votes : %i\n", candidates[i].name, candidates[i].votes);
     }
     // TODO
     return;
