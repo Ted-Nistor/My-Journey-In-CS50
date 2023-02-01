@@ -90,7 +90,7 @@ void print_winner(void)
         counter = 0;
         for (int i = 0; i < n ; i ++)
         {
-           if (candidates[i].votes < candidates[i + 1].votes)
+           if (candidates[i].votes > candidates[i + 1].votes)
            {
                counter++;
                temp = candidates[i].votes;
@@ -99,9 +99,9 @@ void print_winner(void)
                s = candidates[i].name;
                candidates[i].name = candidates[i + 1].name;
                candidates[i + 1].name = s;
+               printf("Candidate: %s Votes: %i\n", candidates[i].name, candidates[i].votes);
             }
         }
     }
-    printf("%s\n", candidates[n - 1].name);
     return;
 }
