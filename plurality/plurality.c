@@ -82,9 +82,10 @@ void print_winner(void)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (vote)
+        if (&vote)
         {
-            
+            candidates[i].votes++;
+            printf("Candidate : %s Votes : %i\n", candidates[i].name, candidates[i].votes);
         }
     }
     // TODO
