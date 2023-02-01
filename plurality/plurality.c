@@ -65,7 +65,8 @@ int main(int argc, string argv[])
 
 // Update vote totals given a new vote
 bool vote(string name)
-{   // Iterate through the list of candidates and if matched
+{
+    // Iterate through the list of candidates and if matched
     // with the candidates in the command line arguments, increase their vote counter by 1.
     for (int i = 0; i < candidate_count; i++)
     {
