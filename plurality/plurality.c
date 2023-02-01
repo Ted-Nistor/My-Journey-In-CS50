@@ -103,6 +103,11 @@ void print_winner(void)
         }
 
     }
-    
+    n--;
+    while (candidates[n].votes != candidates[n-1].votes && n > 0)
+    {
+        printf("%s\n", candidates[n].name);
+        n-- ;
+    }
     return;
 }
