@@ -95,12 +95,12 @@ void print_winner(void)
             {
                 counter++;
                 temp = candidates[i].votes;
-                highest_votes = candidates[i].votes;
                 s = candidates[i].name;
                 candidates[i].votes = candidates[i + 1].votes;
                 candidates[i + 1].votes = temp;
                 candidates[i].name = candidates[i + 1].name;
                 candidates[i + 1].name = s;
+                highest_votes = candidates[i].votes;
             }
        }
     }
@@ -109,7 +109,11 @@ void print_winner(void)
         printf("Candidate: %s Votes: %i\n", candidates[j].name, candidates[j].votes);
     }
     printf("%s\n", candidates[n].name);
-    while (highest_score )
+    while (highest_score == candidates[n].votes )
+    {
+        printf("%s\n", candidates[n].name);
+        n--;
+    }
 
 
     return;
