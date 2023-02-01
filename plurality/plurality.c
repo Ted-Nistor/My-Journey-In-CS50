@@ -93,10 +93,6 @@ void print_winner(void)
             printf("%s\n", winner);
             return;
         }
-        else if (highest_score == candidates[i + 1].votes)
-        {
-            printf("%s\n", candidates[i].name);
-        }
     }
     return;
 }
