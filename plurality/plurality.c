@@ -104,11 +104,12 @@ void print_winner(void)
             }
        }
     }
-    while (highest_votes == candidates[n].votes)
+    do
     {
         printf("%s\n", candidates[n].name);
         n--;
     }
+    while (highest_votes == candidates[n].votes);
 
 
     return;
