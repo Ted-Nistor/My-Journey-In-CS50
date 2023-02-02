@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -143,13 +144,15 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
+    int candidate;
     for (int i = 0; i < voter_count; i++)
     {
         for(int j = 0; j < candidate_count; j++)
         {
-            if(candidates[i].eliminated == false)
+            candidate = preferences[i][j]
+            if(candidates[candidate].eliminated == false)
             {
-                candidates[preferences[i][j]].votes++;
+                candidates[candidate].votes++;
             }
         }
     }
@@ -159,12 +162,13 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    for(int i=0;i < candidate_count;i++) // loop thru candidates
+    int majority = round(voter_count / 2);
+    for(int i=0; i < candidate_count; i++) // loop thru candidates
     {
-        string most= candidates[i].name ;// for most votes
-        if(candidates[i].votes > voter_count/2) // more than 50 %
+        if(candidates[i].votes > majority) // more than 50 %
         {
-            printf("%s\n", most);
+            printf("%s\n", candidates[i].name);
+            return true;
         }
     }
 
@@ -174,15 +178,15 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    int min = voter_count;
+    int min = candidates[0].votes;
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].eliminated == false && candidates[i].votes == min)
+        if (candidates[i].eliminated == false && candidates[i].votes < min)
         {
             min = candidates[i].votes;
         }
     }
-    return 0;
+    return min;
 }
 
 // Return true if the election is tied between all candidates, false otherwise
