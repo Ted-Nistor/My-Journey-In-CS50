@@ -165,7 +165,7 @@ bool print_winner(void)
         string most_votes = candidates[i].name;
         if (candidates[i].votes > voter_count / 2)
         {
-            
+            printf("%s\n", most_votes);
         }
     }
     return false;
