@@ -149,7 +149,7 @@ void tabulate(void)
     {
         for(int j = 0; j < candidate_count; j++)
         {
-            candidate = preferences[i][j]
+            candidate = preferences[i][j];
             if(candidates[candidate].eliminated == false)
             {
                 candidates[candidate].votes++;
@@ -207,10 +207,9 @@ void eliminate(int min)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].eliminated == false && candidates[i].votes == min )
+        if (candidates[i].votes == min)
         {
             candidates[i].eliminated = true;
         }
     }
-    return;
 }
