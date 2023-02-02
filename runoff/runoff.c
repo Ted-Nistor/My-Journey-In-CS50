@@ -129,7 +129,7 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    for(int i=0; i<candidate_count; i++) // check if candidate is valid
+    for(int i=0; i < candidate_count; i++) // check if candidate is valid
      {
         if(strcmp(name,candidates[i].name) == 0)
         {
@@ -159,7 +159,7 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    for(int i=0;i<candidate_count;i++) // loop thru candidates
+    for(int i=0;i < candidate_count;i++) // loop thru candidates
     {
         string most= candidates[i].name ;// for most votes
         if(candidates[i].votes > voter_count/2) // more than 50 %
