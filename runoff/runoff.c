@@ -164,7 +164,7 @@ bool print_winner(void)
         string most= candidates[i].name ;// for most votes
         if(candidates[i].votes > voter_count/2) // more than 50 %
         {
-            printf("%s\n",most);
+            printf("%s\n", most);
         }
     }
 
