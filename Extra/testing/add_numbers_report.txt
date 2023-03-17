@@ -1,0 +1,21 @@
+Test Summary
+============
+Function: add_numbers()
+Test Case: test_add_numbers()
+
+Results:
+- Test case passed.
+
+Issues/Bugs:
+- None found during testing.
+
+Expected Behavior:
+- The function should return the sum of two numbers.
+
+Modifications Made:
+- None required.
+
+Recommendations:
+- Additional test cases should be written to verify the
+behavior of the function with negative numbers, zero,
+and large numbers.

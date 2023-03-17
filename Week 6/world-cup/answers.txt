@@ -1,0 +1,18 @@
+Times:
+
+10 simulations: 0m0.040s
+100 simulations: 0m0.037s
+1000 simulations: 0m0.037s
+10000 simulations: 0m0.142s
+100000 simulations: 0m1.233s
+1000000 simulations: 0m12.156s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+One prediction that proved incorrect is that the time taken for 10000 simulations is less than 10 times the time taken for 1000 simulations. In reality, the time taken for 10000 simulations is almost 4 times the time taken for 1000 simulations.
+
+Another prediction that proved incorrect is that the time taken for 1000000 simulations is less than 10 times the time taken for 100000 simulations. In reality, the time taken for 1000000 simulations is more than 9 times the time taken for 100000 simulations.
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+If we assume a linear relationship between the number of simulations and the compute time, we can say that after 10000 simulations, we have a good enough prediction, as the time taken for 10000 simulations is around 0.14 seconds. However, this is just an estimate and may not hold true for all scenarios. In practice, the acceptable level of error and the resources available for computation would determine the number of simulations that are good enough.
